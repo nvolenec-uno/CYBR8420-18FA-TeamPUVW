@@ -3,3 +3,4 @@ Project: samba
 
 Team members:
 Nick Volenec
+Chinguun Purevdagva
