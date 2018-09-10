@@ -27,6 +27,8 @@ controllers.
 
 SAMBA was originally developed by Andrew Tridgell.
 
+The current stable release of SAMBA is 4.8.5 (September 10, 2018).
+
 -   What are the security needs of users from this software in its intended
     threat environment (e.g., home, office, enterprise, bank, government, etc.)?
     If there are none or very few, then re-evaluate your selection.
@@ -56,21 +58,25 @@ SAMBA was originally developed by Andrew Tridgell.
 4.  Hardening of network security protocols and services exposed by the SAMBA
     server
 
+5.  Resistant to script based attacks on the user interfaces.
+
 -   Motivation for selecting this project
 
 >   SAMBA is a large, mature open source project which is widely used. It has
->   many modules and security components which are maintained by a larger
->   contributor base.
+>   many modules and security components which are maintained by a large
+>   contributor base. SAMBA by its nature has a large extensive security
+>   exposure for potential errors. SAMBA has an open policy on accepting
+>   contributions. SAMBA supports global languages and international file names.
 
 -   Open source project description (What is it?, Contributors, Activity, Use,
     Popularity, Languages used, platform, documentation sources, etc.)
 
->   SAMBA is written in the C language and is licensed under the GNU General
->   Public License version 3 or later (as published by the Free Software
->   Foundation). SAMBA is integrated with the automated testing project Travis
->   CI (<https://travis-ci.org/>).
+>   SAMBA is written in primarily in the C programming language and is licensed
+>   under the GNU General Public License version 3 or later (as published by the
+>   Free Software Foundation). SAMBA is integrated with the automated testing
+>   project Travis CI (<https://travis-ci.org/>).
 
->   The official GitHub mirror of the SAMBA project
+>   The official GitHub repository of the SAMBA project is
 >   <https://git.samba.org/samba.git> has had 113,433 commits, 36 branches, 800
 >   releases and 249 contributors as of September 2018.
 
@@ -104,14 +110,13 @@ SAMBA was originally developed by Andrew Tridgell.
 >   \#10656 (<https://bugzilla.samba.org/show_bug.cgi?id=10656>) was modified on
 >   March 2018.
 
+The CVE database at Mitre Corporation
+(<http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=samba>) lists 167 CVE entries
+for SAMBA as of September 2018.
+
 -   Link to your team GitHub repository that shows your internal project task
     assignments and collaborations to finish this task.
 
->   Team PUVW maintains a Githhub repository here:
+>   Project PUVW maintains a Githhub repository here:
 
->   <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW>
-
->   [Github Project Boards,  (Links to an external site.)Links to an external
->   site.](https://help.github.com/articles/about-project-boards/)[Kanban
->   boards (Links to an external site.)Links to an external
->   site.](https://en.wikipedia.org/wiki/Kanban_board)
+>   <https://github.io/nvolenec-uno/CYBR8420-18FA-TeamPUVW>
