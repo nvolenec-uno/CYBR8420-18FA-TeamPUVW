@@ -76,7 +76,7 @@ The current stable release of SAMBA is 4.8.5 (September 10, 2018).
 >   Free Software Foundation). SAMBA is integrated with the automated testing
 >   project Travis CI (<https://travis-ci.org/>).
 
->   The official GitHub repository of the SAMBA project is
+>   The official Git repository of the SAMBA project is
 >   <https://git.samba.org/samba.git> has had 113,433 commits, 36 branches, 800
 >   releases and 249 contributors as of September 2018.
 
