@@ -12,16 +12,24 @@ Misuse cases for listing of files on the SAMBA server:
 
 1. Path or Directory Traversal - this misuse case is when a file path or directory
    is misconfigured or terminates file name access due to an error. This causes the
-   HR manager or employees to not be able to list files on the server.
+   HR manager or employees to not be able to list files on the server. One example
+   in the code base was when a man in the middle attack allowed read and alter
+   access via a client connection when a DFS (file server) redirect when the
+   original connection was SMB3. 
+   (https://www.samba.org/samba/security/CVE-2017-12151.html)
 
 2. Sensitive file exposure - this misuse case occurs when sensitive files are
    inadvertently exposed to the HR manager or other employees on the server. An
    example would be a document of employees to be terminated or laid off.
+   (https://www.samba.org/samba/security/CVE-2018-10919.html)
 
 3. Corrupted directories or file names - this misuse case occurs when the file
    names or directories contain non-displayed or malformed file names, such as
    binary file names, causing the HR manager not to be able to access the files
-   or delete or modify the file names.
+   or delete or modify the file names. This was demonstrated as a August 2018
+   security error in SAMBA. (https://www.samba.org/samba/security/CVE-2018-10858.html)
+
+
 
 ======================================================================
 
@@ -30,15 +38,23 @@ Misuse cases for Email Links to Files:
 1. Malicious file injection - this misuse case is when a link is shared with
    a malicious file which could potentially be opened by a recipient which
    would then inject malware on the HR manager or employees client computer.
+   One example was a bug were a SAMBA server was caused to execute from
+   a writable share using a shared library.
+   (https://www.samba.org/samba/security/CVE-2017-7494.html)
 
 2. File Manipulation - this misuse case is when the email link is used to
    alter the contents or the name of a file on a server. This could also be
-   used to maliciously copy or duplicate files across servers.
+   used to maliciously copy or duplicate files across servers. One example
+   in the code base was a time-of-check, time-of-use race condition which
+   allowed clients to access non-exported parts of the file system via
+   symbolic links. (https://www.samba.org/samba/security/CVE-2017-2619.html)
 
 3. Network evesdropping - this misuse case is when someone uses a file link
    accessed from a network monitor like Wireshark or a email interceptor program
    to steal information from the email or the file server. For example, one
    email could contain a link to a file and other emails could contain a user
-   id and password to access the file.
+   id and password to access the file. See Man-in-the-Middle attack patch
+   (https://www.samba.org/samba/security/CVE-2017-12150.html)
+
 
 ===============================================================================
