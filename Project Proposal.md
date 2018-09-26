@@ -25,7 +25,7 @@ BSD variants such as the macOS Server and macOS client. SAMBA integrates with
 Microsoft Windows Domain Server, Active Directory and Windows Domain
 controllers.
 
-SAMBA was originally developed by Andrew Tridgell.
+SAMBA was originally developed by Andrew Tridgell. Currently SAMBA is maintained by "the samba team" a group of 54 people from all over the world.
 
 The current stable release of SAMBA is 4.8.5 (September 10, 2018).
 
@@ -120,3 +120,7 @@ for SAMBA as of September 2018.
 >   Project PUVW maintains a Github repository here:
 
 >   <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW>
+
+Team collaboration:
+    This project proposal was composed, nearly entirely, in two group sessions on Saturday 9/8/2018 and Monday 9/17/2018, all team members were present for both sessions.
+
