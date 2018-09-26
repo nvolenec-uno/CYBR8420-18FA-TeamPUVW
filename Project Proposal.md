@@ -121,6 +121,10 @@ for SAMBA as of September 2018.
 
 >   <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW>
 
+>    Project task board is on github projects section here:
+
+>   <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/projects>
+
 Team collaboration:
     This project proposal was composed, nearly entirely, in two group sessions on Saturday 9/8/2018 and Monday 9/17/2018, all team members were present for both sessions.
 
