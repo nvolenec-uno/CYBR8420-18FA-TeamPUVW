@@ -1,0 +1,9 @@
+Description of use case scenario:
+This is a system for distributing and managing Human Resource (HR) files for a small-medium sized company.
+
+The system should have the following features:
+HR personnel should be able to manage (add/remove/update) files
+All non-HR employees should be able to access (read-only) the files
+The files should be printable
+The files should be able to be listed and searched by all employees
+HR personnel should have the ability to email links to files, for example in the even that they are updated this could be used as a mechanism to notify all employees of the change
