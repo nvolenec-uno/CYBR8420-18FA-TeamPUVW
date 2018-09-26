@@ -25,10 +25,10 @@ Samba has multiple methods of user authentication. Feature is to check user in t
 
 Samba can handle individual users, guest users and groups share access by using its flags in configuration file. For example:
 
-<li>path = /home/dave</li>
-<li>comment = Dave's home directory</li>
-<li>writable = yes</li>
-<li>valid users = dave</li>
+path = /home/dave</br>
+comment = Dave's home directory</br>
+writable = yes</br>
+valid users = dave</br>
 
 Share-level access options
 
