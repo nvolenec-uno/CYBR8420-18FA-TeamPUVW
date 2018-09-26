@@ -48,7 +48,7 @@ https://www.samba.org/samba/docs/using_samba/ch09.html
 OSS project documentation review
 Review OSS project documentation for security-related configuration and installation issues. Summarize your observations.
 
-Samba had authentication related issue which allows NTLMv1 on SMB1 transport, even in disabled on the server side. However it is disabled since Samba 4.5, version 4.7 caused error occurrence again. Version 4.8.3 fixed this error on 14th of August, 2018. 
+Samba had an authentication related issue which allows NTLMv1 on SMB1 transport, even if disabled on the server side. It has been disabled since Samba version 4.5, but was reintroduced in version 4.7 which caused the error occurrence again. Version 4.8.3 fixed this error on 14th of August, 2018. 
 
 CVE-2018-1139 (Weak authentication protocol allowed.)
 
