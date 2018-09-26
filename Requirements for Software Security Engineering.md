@@ -25,10 +25,23 @@ Samba has multiple methods of user authentication. Feature is to check user in t
 
 Samba can handle individual users, guest users and groups share access by using its flags in configuration file. For example:
 
-path = /home/dave
-comment = Dave's home directory
-writable = yes
-valid users = dave
+<li>path = /home/dave</li>
+<li>comment = Dave's home directory</li>
+<li>writable = yes</li>
+<li>valid users = dave</li>
+
+Share-level access options
+
+| Options 	| Parameters 	| Function 	| Default 	| On scope 	|
+|-------------------------	|----------------------------	|---------------------------------------
+| admin users 	| string (list of usernames) 	| Users who can perform operations as root 	| None 	| Share 	|
+| valid users 	| string (list of usernames) 	| Users who can connect to a share 	| None 	| Share 	|
+| invalid users 	| string (list of usernames) 	| Users who will be denied access to a share 	| None 	| Share 	|
+| read list 	| string (list of usernames) 	| Users who have read-only access to a writable share 	| None 	| Share 	|
+| write list 	| string (list of usernames) 	| Users who have read/write access to a read-only share 	| None 	| Share 	|
+| max connections 	| numeric 	| Maximum number of connections for a share at a given time 	| 0 	| Share 	|
+| guest only (only guest) 	| Boolean 	| If yes, allows only guest access 	| No 	| Share 	|
+| guest account 	| string (name of account) 	| Unix account that will be used for guest access 	| Nobody 	| Share 	|
 
 https://www.samba.org/samba/docs/using_samba/ch09.html 
 
