@@ -117,7 +117,8 @@ The current stable release of SAMBA is 4.8.5 (September 10, 2018).
 >   (<http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=samba>) lists 167 CVE entries
 >   for SAMBA as of September 2018.
 
->   Any security issues that affect
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/cve-graph.JPG)
+As the graph shows there was drastic spike in CVEs in 2005, since then there has been a consistent but small number of CVEs for this project. This is to be expected from a project as mature as SAMBA.
 
 -   Link to your team GitHub repository that shows your internal project task
     assignments and collaborations to finish this task.
