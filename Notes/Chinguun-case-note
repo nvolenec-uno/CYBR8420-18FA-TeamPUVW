@@ -1,0 +1,36 @@
+Misuse case notion and quality
+Use of proper misuse case notation (as discussed in class). Reasoning Quality: Misuse cases reflect reasoning that help derive security requirements.
+
+Threat: Hide or delete content on file server /Privilege escalation/ 
+
+In the company, HR manager and employee both access to employee’s directory on file server which contains their application. HR employee also copy job candidate’s application to same folder. 
+Malicious insider who is not authorized to edit this file has granted access and hidden some of competitive candidate’s information intentionally.     
+
+Mitigation: Setting permission 
+Prevention: Prohibit guest account
+
+To set permission on users individually or group. Prohibit any guest account. 
+
+Reflection
+Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations.
+
+Samba has multiple methods of user authentication. Feature is to check user in two level: 
+1. User name and password /n
+2. Access rights to the files and directories. /n 
+
+Samba can handle individual users, guest users and groups share access by using its flags in configuration file. For example:
+
+path = /home/dave /n
+comment = Dave's home directory /n
+writable = yes /n
+valid users = dave /n
+Share-level access options /n
+
+https://www.samba.org/samba/docs/using_samba/ch09.html 
+
+OSS project documentation review
+Review OSS project documentation for security-related configuration and installation issues. Summarize your observations.
+
+Samba has enough documentation related configuration and installation. 
+
+https://www.samba.org/samba/docs/
