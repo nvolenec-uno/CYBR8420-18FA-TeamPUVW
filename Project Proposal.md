@@ -104,15 +104,20 @@ The current stable release of SAMBA is 4.8.5 (September 10, 2018).
     security-related engineering decisions, security feature additions/removal,
     etc. )
 
+>   The security related goals specified in the SAMBA roadmap <https://wiki.samba.org/index.php/Roadmap> only relate
+>   to user authentication with active directory.
+
 >   SAMBA has a large bug database maintained at: <https://bugzilla.samba.org/>
 
 >   The Bugzilla database lists 398 security related patches, the last one
 >   \#10656 (<https://bugzilla.samba.org/show_bug.cgi?id=10656>) was modified on
 >   March 2018.
 
-The CVE database at Mitre Corporation
-(<http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=samba>) lists 167 CVE entries
-for SAMBA as of September 2018.
+>   The CVE database at Mitre Corporation
+>   (<http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=samba>) lists 167 CVE entries
+>   for SAMBA as of September 2018.
+
+>   Any security issues that affect
 
 -   Link to your team GitHub repository that shows your internal project task
     assignments and collaborations to finish this task.
@@ -127,4 +132,6 @@ for SAMBA as of September 2018.
 
 Team collaboration:
     This project proposal was composed, nearly entirely, in two group sessions on Saturday 9/8/2018 and Monday 9/17/2018, all team members were present for both sessions.
+    
+   Project for Project Proposal:  <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/projects/2>
 
