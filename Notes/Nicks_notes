@@ -24,3 +24,15 @@ Further documentation here: https://www.linuxtopia.org/online_books/network_admi
 Permission verification – Yes, SAMBA suppors Access Control Lists (ACL) which enable management of user permissions control.  https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
 
 
+-------------------
+
+CRUD misuse case:
+The original users/use cases: We have three classes of users who each have one use case: an HR manager who needs to add and remove files, and HR Employee who needs to update the contents of files, and a regular employee who needs to access (read-only) the files.
+The misusers/misuse cases: We have Mr. Malicious who is intent on injecting malicious files to the system, such as a virus. Mr. Manipulator who is interested in manipulating the files in our system, for example to inject incorrect information. Mr. Voyeur who is interested in accessing files on our system without authorization via the mechanisms of network eavesdropping and accessing the system with stolen credentials.
+
+Additional users/use-cases:  In response to the misusers and misuse cases we have added new users and use cases.  We now have a system administrator who is responsible for monitoring logs which can monitor malicious file injection via identification of a new file being added by a new party, or if using stolen credentials possibly the addition of a file outside of business hours.
+The system administrator is also responsible for managing user authentication, by that we mean that the system administrator is responsible for management of user accounts that have access to the system.  
+
+We the use case of permission verification for the HR manager, this is the HR Managers responsibility because he/she is the one who would know who should have the privileged access of add/remove files (HR Manager) and update files (HR Employee) everyone else would have read access only.
+
+We add the use case of encrypt files in transit 
