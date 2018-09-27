@@ -1,20 +1,20 @@
-## University of Nebraska Omaha
+# University of Nebraska Omaha
 
 # CYBR 8420 Software Assurance
 
-# September 3, 2018
+### September 3, 2018
 
-# Resubmission September 26, 2018
+### Resubmission September 26, 2018
 
-Team PUVW members:
+## Team PUVW members:
 
-Chinguun Purevdagva <cpurevdagva@unomaha.edu>
+### Chinguun Purevdagva <cpurevdagva@unomaha.edu>
 
-Jackson Urrutia <jurrutia@unomaha.edu>
+### Jackson Urrutia <jurrutia@unomaha.edu>
 
-Nick Volenec <nvolenec@unomaha.edu>
+### Nick Volenec <nvolenec@unomaha.edu>
 
-Bob Wilmes <rwilmes@unomaha.edu>
+### Bob Wilmes <rwilmes@unomaha.edu>
 
 Open Source project: <http://www.samba.org> or <https://git.samba.org>
 
