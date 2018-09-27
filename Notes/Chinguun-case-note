@@ -15,16 +15,16 @@ Reflection
 Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations.
 
 Samba has multiple methods of user authentication. Feature is to check user in two level: 
-1. User name and password /n
-2. Access rights to the files and directories. /n 
+1. User name and password 
+2. Access rights to the files and directories. 
 
 Samba can handle individual users, guest users and groups share access by using its flags in configuration file. For example:
 
-path = /home/dave /n
-comment = Dave's home directory /n
-writable = yes /n
-valid users = dave /n
-Share-level access options /n
+path = /home/dave 
+comment = Dave's home directory
+writable = yes 
+valid users = dave 
+Share-level access options 
 
 https://www.samba.org/samba/docs/using_samba/ch09.html 
 
