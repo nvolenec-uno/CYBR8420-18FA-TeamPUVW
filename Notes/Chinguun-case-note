@@ -31,6 +31,6 @@ https://www.samba.org/samba/docs/using_samba/ch09.html
 OSS project documentation review
 Review OSS project documentation for security-related configuration and installation issues. Summarize your observations.
 
-Samba has enough documentation related configuration and installation. 
+Samba has enough documentation related configuration and installation that covers authentication and permission. 
 
 https://www.samba.org/samba/docs/
