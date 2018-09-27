@@ -1,8 +1,10 @@
-##University of Nebraska Omaha
+## University of Nebraska Omaha
 
-#CYBR 8420 Software Assurance
+# CYBR 8420 Software Assurance
 
-#September 3, 2018
+# September 3, 2018
+
+# Resubmission September 26, 2018
 
 Team PUVW members:
 
