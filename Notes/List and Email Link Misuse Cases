@@ -18,7 +18,7 @@ Misuse cases for listing of files on the SAMBA server:
    original connection was SMB3. 
    (https://www.samba.org/samba/security/CVE-2017-12151.html)
 
-2. Sensitive file exposure - this misuse case occurs when sensitive files are
+2. Exploit Sensitive Files - this misuse case occurs when sensitive files are
    inadvertently exposed to the HR manager or other employees on the server. An
    example would be a document of employees to be terminated or laid off.
    (https://www.samba.org/samba/security/CVE-2018-10919.html)
@@ -49,7 +49,7 @@ Misuse cases for Email Links to Files:
    allowed clients to access non-exported parts of the file system via
    symbolic links. (https://www.samba.org/samba/security/CVE-2017-2619.html)
 
-3. Network evesdropping - this misuse case is when someone uses a file link
+3. Man-in-the-Middle - this misuse case is when someone uses a file link
    accessed from a network monitor like Wireshark or a email interceptor program
    to steal information from the email or the file server. For example, one
    email could contain a link to a file and other emails could contain a user
