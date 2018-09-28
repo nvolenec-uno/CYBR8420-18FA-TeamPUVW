@@ -5,13 +5,13 @@ Malicious insider who is not authorized to edit this file has granted access and
 
 ===========================================================================================================================
 
-Threat: Hide or delete content on file server /Privilege escalation/ 
+Threat: Hide or delete content on file server /Privilege escalation/, DoS /Buffer overflow/
 Mitigation: Setting permission 
 Prevention: Prohibit guest account
 
 To set permission on users individually or group. Prohibit any guest account. 
 
-Samba has multiple methods of user authentication. Feature is to check user in two level: 
+- Samba has multiple methods of user authentication. Feature is to check user in two level: 
 1. User name and password 
 2. Access rights to the files and directories. 
 
@@ -34,7 +34,9 @@ Share-level access options
 | guest only (only guest) | Boolean                    | If yes, allows only guest access                          | no      | Share |
 | guest account           | string (name of account)   | Unix account that will be used for guest access           | nobody  | Share |
 
-https://www.samba.org/samba/docs/using_samba/ch09.html 
+https://www.samba.org/samba/docs/using_samba/ch09.html
+
+- Samba had bufferoverflow issue on older versions /2.2.x/. CVE-2003-0201
 
 ============================================================================================================================
 
