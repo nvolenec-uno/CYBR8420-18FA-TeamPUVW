@@ -36,7 +36,7 @@ Share-level access options
 
 https://www.samba.org/samba/docs/using_samba/ch09.html
 
-- Samba had bufferoverflow issue on older versions /2.2.x/. CVE-2003-0201
+- Samba had bufferoverflow issue on older versions /2.2.x/. CVE-2003-0201 
 
 ============================================================================================================================
 
@@ -44,4 +44,6 @@ Documentation review:
 
 -Missing security configs: Firewall configuration during installation Samba. 
 
+If there is a firewall, 137-139,445 ports must be open. 
 
+https://wiki.archlinux.org/index.php/samba#Configure_Firewall
