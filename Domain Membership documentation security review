@@ -28,7 +28,8 @@ Section 2 – Joining a Linux or Unix Host to a Domain
 		The section https://wiki.samba.org/index.php/Configuring_Winbindd_on_a_Samba_AD_DC 
 		contains a description of using winbindd daemon on Linux or Unix to map Linux or Unix ID’s to a matching Active Directory ID.
 	There is one potential security issue here regarding the resolution of revoked ID’s remaining active in Active Directory.
-	The section on Pluggable Authentication Modules (PMA) for Linux Samba clients should reference the Linux PAM Wiki. http://www.linux-pam.org/
+	The section on Pluggable Authentication Modules (PAM) for Linux Samba clients should reference the Linux PAM Wiki. 
+		http://www.linux-pam.org/
 	The section on identity map use with ldap is incomplete: https://wiki.samba.org/index.php/Idmap_config_ldap
 	The section on identity map use with name service switch (NSS) is incomplete: https://wiki.samba.org/index.php/Idmap_config_nss
 	Authenticating Domain Users Using PAM (Programmable Authentication Modules)
