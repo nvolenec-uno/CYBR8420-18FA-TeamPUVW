@@ -12,16 +12,17 @@ HR personnel should have the ability to email links to files, for example in the
 ------
 Encrypt files in transit – Yes, SAMBA supports native SSL support along with SSL supported connections to LDAP servers: https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#LDAPSSL
 
-User authentication --  Yes, SAMBA provides user authentication natively when running as a standalone server as described here: https://wiki.samba.org/index.php/Setting_up_Samba_as_a_Standalone_Server#Creating_a_Local_User_Account
+XX User authentication --  Yes, SAMBA provides user authentication natively when running as a standalone server as described here: https://wiki.samba.org/index.php/Setting_up_Samba_as_a_Standalone_Server#Creating_a_Local_User_Account
 However, this is not how Samba is typically used, often SAMBA is used along with PAM or LDAP which provide their own user authentication mechanisms.
 
 Log monitoring – No, SAMBA does not support log monitoring natively, although it does have the capability to generate robust logging. https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#LOGGING
 
-Password policy – Yes, SAMBA does provide tools for establishing password policies. The following policies can be set: minimum password length, maximum and maximum password age, storing password history to prevent password reuse, lockout of account after a definable number of failed attempts and duration of account lockout after failed attempts limit reached.
+XX Password policy – Yes, SAMBA does provide tools for establishing password policies. The following policies can be set: minimum password length, maximum and maximum password age, storing password history to prevent password reuse, lockout of account after a definable number of failed attempts and duration of account lockout after failed attempts limit reached.
 See option --account-policy in https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html
 Further documentation here: https://www.linuxtopia.org/online_books/network_administration_guides/samba_reference_guide/18_passdb_15.html
 
 Permission verification – Yes, SAMBA suppors Access Control Lists (ACL) which enable management of user permissions control.  https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
+
 
 
 -------------------
