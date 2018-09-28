@@ -11,9 +11,10 @@ The files can be printed using a network attached printer.
 The file directories can be listed and searched.
 
 # CRUD
-  
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp1.jpeg)
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp2.jpeg)
 # Search Files
-  
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuse case p1 - Search Files.png)  
 ## Misuse case notion and quality
 Use of proper misuse case notation (as discussed in class). Reasoning Quality: Misuse cases reflect reasoning that help derive security requirements.
 
@@ -86,7 +87,7 @@ https://www.samba.org/samba/history/
    binary file names, causing the HR manager not to be able to access the files
    or delete or modify the file names. This was demonstrated as a August 2018
    security error in SAMBA. (https://www.samba.org/samba/security/CVE-2018-10858.html)
-
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuse case p1 - List of Files.png)
 
 # Misuse cases for E-mail Links to Files
 
@@ -111,4 +112,4 @@ https://www.samba.org/samba/history/
    id and password to access the file. See Man-in-the-Middle attack patch
    (https://www.samba.org/samba/security/CVE-2017-12150.html)
 
-
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuse case p1 - Email Links to Files.png)
