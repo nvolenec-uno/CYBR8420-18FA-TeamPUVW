@@ -87,7 +87,7 @@ https://www.samba.org/samba/history/
    binary file names, causing the HR manager not to be able to access the files
    or delete or modify the file names. This was demonstrated as a August 2018
    security error in SAMBA. (https://www.samba.org/samba/security/CVE-2018-10858.html)
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuse case p1 - List of Files.png)
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-ListofFiles.png)
 
 # Misuse cases for E-mail Links to Files
 
@@ -112,11 +112,11 @@ https://www.samba.org/samba/history/
    id and password to access the file. See Man-in-the-Middle attack patch
    (https://www.samba.org/samba/security/CVE-2017-12150.html)
 
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuse case p1 - Email Links to Files.png)
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-EmailLinkstoFiles.png)
 
 # Print Files
 
-## Misuse cases for printing files on a SAMBA server.
+##Misuse cases for printing files on a SAMBA server.
 
 1.Treekiller joe wants to spam print jobs to printers to prevent actual jobs from being printed.
 
@@ -125,7 +125,7 @@ https://www.samba.org/samba/history/
 
 3.Sells Data for Cash josh wants to steal information about the prints by eavesdropping on the network.
 
-## Prevention
+##Prevention
 1.User Authorization - Samba supports user authorization.
 
 2. Printer Settings to Limit Jobs - Yes, samba does have the ability to limit the size of prints
@@ -146,5 +146,3 @@ Within Joining a Windows Server 2012 / 2012 R2 DC to a Samba AD there are curren
 to a samba active directory.  This can be indicative of an issue with adding a Windows Server 2008 server as well, and testing 
 could show that a warning needs to be added to Joining a Windows Server 2008 / 2008 R2 DC to a Samba AD as well or if the issue
 is not present on the Windows Server 2008 a note the bug does not affect Windows Server 2008.
-
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/printjobs.png)
