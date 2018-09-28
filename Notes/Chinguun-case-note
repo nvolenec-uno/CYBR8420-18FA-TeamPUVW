@@ -40,6 +40,8 @@ https://www.samba.org/samba/docs/using_samba/ch09.html
 
 ============================================================================================================================
 
-Samba has enough documentation related configuration and installation that covers authentication and permission. 
+Documentation review:
 
-https://wiki.samba.org/index.php/User_and_group_management
+-Missing security configs: Firewall configuration during installation Samba. 
+
+
