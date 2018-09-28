@@ -23,6 +23,15 @@ Further documentation here: https://www.linuxtopia.org/online_books/network_admi
 
 Permission verification – Yes, SAMBA suppors Access Control Lists (ACL) which enable management of user permissions control.  https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
 
+file access limits		No, Samba does not support limits on file operations or file reads. The closest feature Samba has is oplocks wherein a client can
+				read and cache a local copy of the file while editing it, when another client wants to read the same file the Samba server requests
+				
+file backups			Yes, samba supports multiple methods of backing up the files in a samba share.
+
+crypto key management	Yes, the Samba documentation recommends that the private key permissions be set to 600 (owner read/write) only, but I was unable to confirm
+			if samba enforces this.
+      
+scan files for exe code  No, Samba does not contain native facilites for scanning files for executable code.
 
 
 -------------------
