@@ -111,3 +111,7 @@ https://www.samba.org/samba/history/
    id and password to access the file. See Man-in-the-Middle attack patch
    (https://www.samba.org/samba/security/CVE-2017-12150.html)
 
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
