@@ -41,7 +41,7 @@ valid users = dave</br>
 Share-level access options
 
 | Options 	| Parameters 	| Function 	| Default 	| On scope 	|
-|-------------------------	|:----------------------------:	|---------------------------------------:
+| -------------------------	| :----------------------------:	| ---------------------------------------: |
 | admin users 	| string (list of usernames) 	| Users who can perform operations as root 	| None 	| Share 	|
 | valid users 	| string (list of usernames) 	| Users who can connect to a share 	| None 	| Share 	|
 | invalid users 	| string (list of usernames) 	| Users who will be denied access to a share 	| None 	| Share 	|
