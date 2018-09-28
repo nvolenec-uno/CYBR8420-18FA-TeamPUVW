@@ -46,3 +46,29 @@ The system administrator is also responsible for managing user authentication, b
 We the use case of permission verification for the HR manager, this is the HR Managers responsibility because he/she is the one who would know who should have the privileged access of add/remove files (HR Manager) and update files (HR Employee) everyone else would have read access only.
 
 We add the use case of encrypt files in transit 
+
+
+------------------------
+OSS project documentation review:
+
+I reviewed https://wiki.samba.org/index.php/User_Documentation starting at "Advanced Configuration" to, and including "Generating Keytabs"
+
+Findings: 
+In "Setting the Maximum Log File Size":https://wiki.samba.org/index.php/Configuring_Logging_on_a_Samba_Server#Setting_the_Maximum_Log_File_Size
+	the documentation states that: "The parameter takes the value in KB. If the size exceeds the value set, Samba appends .old 
+to the log file name and writes new log entries to a new file."
+	but there is no note of what happenes if the maximum specified file size is reached, moved to the '.old' version of the file and then the
+	log file exeeds the specified size again.
+
+	An out of date version of the Samba "Using Samba" book indicates that if the .old file already exists it is deleted and replaced by the new .old file
+	this gives a vector to delete logs by simply spamming the Samaba server by excessive requests.
+
+
+will be submitting a pull request to clarify this beahavior, and will attempt verify that the behavior described in the out of date documentation is correct.
+
+
+NOTE: no mention of the file permissions this file should have, does Samba force certain secure permissions?
+dns.keytab		https://wiki.samba.org/index.php/Dns_tkey_negotiategss:_TKEY_is_unacceptable#Verifying_the_dns.keytab_File_Content
+
+NOTE: https://wiki.samba.org/index.php/Virtual_File_System_Modules is full of VFS modules without any documentation this would be a great place to research
+the module and add some usage documentation
