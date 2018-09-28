@@ -116,16 +116,16 @@ https://www.samba.org/samba/history/
 
 # Print Files
 
-##Misuse cases for printing files on a SAMBA server.
+## Misuse cases for printing files on a SAMBA server.
 
 1.Treekiller joe wants to spam print jobs to printers to prevent actual jobs from being printed.
 
-2.Hacker tom wants to cause as much harm as possible by interfering with print jobs by altering the print
+2.The Disruptor tom wants to cause as much harm as possible by interfering with print jobs by altering the print
   and forcing canceled jobs.
 
 3.Sells Data for Cash josh wants to steal information about the prints by eavesdropping on the network.
 
-##Prevention
+## Prevention
 1.User Authorization - Samba supports user authorization.
 
 2. Printer Settings to Limit Jobs - Yes, samba does have the ability to limit the size of prints
@@ -136,7 +136,7 @@ https://www.samba.org/samba/history/
    https://www.linuxjournal.com/content/smbclient-security-windows-printing-and-file-transfer.  
    Print files are SMB files so the files must be encrypted as such, and the way to do this in samba  is not very powerful.
 
-##OSS project documentation review.
+## OSS project documentation review.
 As the domain controls in samba are widely used the documentation on setup is very thorough
 with Active directory, but with the less used NT4 domain controller the documentation is much
 sparser with setting up samba as an NT4 BDC being completly empty.  This leaves some area to add
@@ -146,3 +146,5 @@ Within Joining a Windows Server 2012 / 2012 R2 DC to a Samba AD there are curren
 to a samba active directory.  This can be indicative of an issue with adding a Windows Server 2008 server as well, and testing 
 could show that a warning needs to be added to Joining a Windows Server 2008 / 2008 R2 DC to a Samba AD as well or if the issue
 is not present on the Windows Server 2008 a note the bug does not affect Windows Server 2008.
+
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/printjobs.png)
