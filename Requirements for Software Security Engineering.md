@@ -1,8 +1,8 @@
-### Requirements for Software Security Engineering
+# Requirements for Software Security Engineering
 
 ## Essential Data Flows:
 
-# Description of the use case scenario:
+### Description of the use case scenario:
 
 The SAMBA server is a network file server for a small company including their HR department.
 The system is used to store files for office use including search and email capability using links.
@@ -41,7 +41,7 @@ valid users = dave</br>
 Share-level access options
 
 | Options 	| Parameters 	| Function 	| Default 	| On scope 	|
-|-------------------------	|----------------------------	|---------------------------------------
+|-------------------------	|:----------------------------:	|---------------------------------------:
 | admin users 	| string (list of usernames) 	| Users who can perform operations as root 	| None 	| Share 	|
 | valid users 	| string (list of usernames) 	| Users who can connect to a share 	| None 	| Share 	|
 | invalid users 	| string (list of usernames) 	| Users who will be denied access to a share 	| None 	| Share 	|
