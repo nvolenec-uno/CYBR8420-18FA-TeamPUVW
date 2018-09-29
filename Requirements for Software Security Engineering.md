@@ -234,14 +234,14 @@ No one is currently listed as the Samba documentation champion
    and forcing canceled jobs.  This could be done by sending or stopping signals to printers.
 
 3. Sells Data for Cash josh wants to steal information about the prints by eavesdropping on the network.
-   He can do this by monitoring the SMB files that are transfered.  The default in samba is to not encrypt SMB files
+   He can do this by monitoring the SMB files that are transferred.  The default in samba is to not encrypt SMB files
    and if the configurations are not set the files are easily eavesdropped on.
 
 ## Alignment of Security Requirements
 
 1. User Authorization - Samba supports user authorization with user permissions to control access as well as
-   user authorization with active directory, and this prevents malicous users from altering print jobs or stoping 
-   print stop signals from being transfered.
+   user authorization with active directory, and this prevents malicious users from altering print jobs or stopping 
+   print stop signals from being transferred.
 
 2. Printer Settings to Limit Jobs - Yes, samba does have the ability to limit the size of prints
    documented here:  https://www.samba.org/samba/docs/old/Samba3-HOWTO/CUPS-printing.html.  
@@ -255,7 +255,7 @@ No one is currently listed as the Samba documentation champion
 
 As the domain controls in samba are widely used the documentation on setup is very thorough
 with Active directory, but with the less used NT4 domain controller the documentation is much
-sparser with setting up samba as an NT4 BDC being completly empty.  This leaves some area to add
+sparser with setting up samba as an NT4 BDC being completely empty.  This leaves some area to add
 some setup documentation in the user documentation.
 
 Within Joining a Windows Server 2012 / 2012 R2 DC to a Samba AD there are currently warnings about adding a Windows 2012 server
