@@ -131,7 +131,7 @@ https://wiki.samba.org/index.php/Setting_up_Audit_Logging
 
 ### OSS Documentation Review
 
-A careful review of the Samba documentation Wiki found several opportunities for misisng or 
+A careful review of the Samba documentation Wiki found several opportunities for missing or 
 incomplete documentation. Though no specific security related items were found in the documentation
 there are numerous technical errors which were discovered. For example the documentation has
 not been updated tp the current Windows 10 clients.
