@@ -63,7 +63,7 @@ If there is a firewall, 137-139,445 ports must be open.
 
 https://wiki.archlinux.org/index.php/samba#Configure_Firewall
 
-# Misuse cases for listing of files 
+# Listing of files 
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-ListofFiles.png)
 1. Path or Directory Traversal - this misuse case is when a file path or directory
    is misconfigured or terminates file name access due to an error. This causes the
@@ -85,7 +85,7 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    security error in SAMBA. (https://www.samba.org/samba/security/CVE-2018-10858.html)
 
 
-# Misuse cases for e-mail links to files
+# E-mail links to files
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-EmailLinkstoFiles.png)
 1. Malicious file injection - this misuse case is when a link is shared with
    a malicious file which could potentially be opened by a recipient which
