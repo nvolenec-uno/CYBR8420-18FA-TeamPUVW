@@ -187,5 +187,5 @@ is not present on the Windows Server 2008 a note the bug does not affect Windows
 
 
 # Project Board
-Link to GitHub repository that shows internal project task assignments and collaborations.
+Link to GitHub repository that shows internal project task assignments and collaborations.  
 https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/projects/1
