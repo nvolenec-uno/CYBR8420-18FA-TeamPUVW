@@ -64,7 +64,7 @@ If there is a firewall, 137-139,445 ports must be open.
 https://wiki.archlinux.org/index.php/samba#Configure_Firewall
 
 # Misuse cases for listing of files on the SAMBA server:
-
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-ListofFiles.png)
 1. Path or Directory Traversal - this misuse case is when a file path or directory
    is misconfigured or terminates file name access due to an error. This causes the
    HR manager or employees to not be able to list files on the server. One example
@@ -83,10 +83,10 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    binary file names, causing the HR manager not to be able to access the files
    or delete or modify the file names. This was demonstrated as a August 2018
    security error in SAMBA. (https://www.samba.org/samba/security/CVE-2018-10858.html)
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-ListofFiles.png)
+
 
 # Misuse cases for E-mail Links to Files
-
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-EmailLinkstoFiles.png)
 1. Malicious file injection - this misuse case is when a link is shared with
    a malicious file which could potentially be opened by a recipient which
    would then inject malware on the HR manager or employees client computer.
@@ -108,7 +108,7 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    id and password to access the file. See Man-in-the-Middle attack patch
    (https://www.samba.org/samba/security/CVE-2017-12150.html)
 
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-EmailLinkstoFiles.png)
+
 Review of Samba User documentation – https://wiki.samba.org/index.php/User_Documentation
 Domain Membership section
 
@@ -125,7 +125,7 @@ https://bugzilla.samba.org/describecomponents.cgi?product=Samba%204.1%20and%20ne
 No one is currently listed as the Samba documentation champion
 
 # Print Files
-
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/printjobs.png)
 ## Misuse cases for printing files on a SAMBA server.
 
 1. Treekiller joe wants to spam print jobs to printers to prevent actual jobs from being printed.  He can do
@@ -164,4 +164,4 @@ to a samba active directory.  This can be indicative of an issue with adding a W
 could show that a warning needs to be added to Joining a Windows Server 2008 / 2008 R2 DC to a Samba AD as well or if the issue
 is not present on the Windows Server 2008 a note the bug does not affect Windows Server 2008.
 
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/printjobs.png)
+
