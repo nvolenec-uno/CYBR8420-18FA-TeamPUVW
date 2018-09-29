@@ -109,14 +109,11 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    (https://www.samba.org/samba/security/CVE-2017-12150.html)
 
 
-Review of Samba User documentation – https://wiki.samba.org/index.php/User_Documentation
-Domain Membership section
-
 # OSS Documentation Review
 
-A careful review of the Samba documentation Wiki had several opportunities for misisng or 
+A careful review of the Samba documentation Wiki found several opportunities for misisng or 
 incomplete documentation. Though no specific security related items were found in the documentation
-there are numerouse technical errors which were discovered. For example the documentation has
+there are numerous technical errors which were discovered. For example the documentation has
 not been updated tp the current Windows 10 clients.
 	
 There is an overall Samba Bugzilla project including a Documentation page here: 
