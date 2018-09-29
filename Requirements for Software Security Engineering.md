@@ -111,6 +111,16 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    id and password to access the file. See Man-in-the-Middle attack patch
    (https://www.samba.org/samba/security/CVE-2017-12150.html)
 
+### Alignment of security requirements
+
+User Authentication - Samba requires that users be authenticated through one of several possible
+external authentication services including Active Directory, LDAP or pluggable authentication modules.
+After authentication the Samba client uses a CID to ensure the identity of each user is verfied on 
+the server message block protocol.
+
+Audit Log - Samba supports anaudit log for Samba client access. This log can be extensively configured
+to monitor discrete events for every typeoffile access event including listing of files.
+https://wiki.samba.org/index.php/Setting_up_Audit_Logging
 
 ### OSS Documentation Review
 
