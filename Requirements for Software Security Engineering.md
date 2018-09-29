@@ -14,30 +14,31 @@ The file directories can be listed and searched.
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp1.jpeg)
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp2.jpeg)
 # Search Files
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuse case p1 - Search Files.png)  
-## Misuse case notion and quality
-Use of proper misuse case notation (as discussed in class). Reasoning Quality: Misuse cases reflect reasoning that help derive security requirements.
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misusecasep1-SearchFiles.png)  
 
-## Threat: Hide or delete content on file server /Privilege escalation/ 
+# Description of usecase scenario:
 
 In the company, HR manager and employee both access to employee’s directory on file server which contains their application. HR employee also copy job candidate’s application to same folder. 
 Malicious insider who is not authorized to edit this file has granted access and hidden some of competitive candidate’s information intentionally.     
 
-## Prevention: Setting permission 
+===========================================================================================================================
+
+# Threat: Hide or delete content on file server /Privilege escalation/, DoS /Buffer overflow/
+# Mitigation: Setting permission 
+# Prevention: Prohibit guest account
 
 To set permission on users individually or group. Prohibit any guest account. 
 
-## Reflection
-Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations.
-
-Samba has multiple methods of user authentication. Feature is to check user in two level: 1. User name and password 2. Access rights to the files and directories. 
+- Samba has multiple methods of user authentication. Feature is to check user in two level: 
+1. User name and password 
+2. Access rights to the files and directories. 
 
 Samba can handle individual users, guest users and groups share access by using its flags in configuration file. For example:
 
-path = /home/dave</br>
-comment = Dave's home directory</br>
-writable = yes</br>
-valid users = dave</br>
+path = /home/dave 
+comment = Dave's home directory
+writable = yes 
+valid users = dave 
 
 Share-level access options
 
@@ -52,20 +53,19 @@ Share-level access options
 | guest only (only guest) 	| Boolean 	| If yes, allows only guest access 	| No 	| Share 	|
 | guest account 	| string (name of account) 	| Unix account that will be used for guest access 	| Nobody 	| Share 	|
 
-https://www.samba.org/samba/docs/using_samba/ch09.html 
+https://www.samba.org/samba/docs/using_samba/ch09.html
 
-OSS project documentation review
-Review OSS project documentation for security-related configuration and installation issues. Summarize your observations.
+- Samba had bufferoverflow issue on older versions /2.2.x/. CVE-2003-0201 
 
-Samba had an authentication related issue which allows NTLMv1 on SMB1 transport, even if disabled on the server side. It has been disabled since Samba version 4.5, but was reintroduced in version 4.7 which caused the error occurrence again. Version 4.8.3 fixed this error on 14th of August, 2018. 
+============================================================================================================================
 
-CVE-2018-1139 (Weak authentication protocol allowed.)
+Documentation review:
 
-https://www.samba.org/samba/history/
+-Missing security configs: Firewall configuration during installation Samba. 
 
-<li>Print Jobs</li>
-<li>List of Files</li>
-</ol>
+If there is a firewall, 137-139,445 ports must be open. 
+
+https://wiki.archlinux.org/index.php/samba#Configure_Firewall
 
 # Misuse cases for listing of files on the SAMBA server:
 
