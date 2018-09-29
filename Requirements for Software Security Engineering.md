@@ -14,28 +14,28 @@ The file directories can be listed and searched.
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp1.jpeg)
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp2.jpeg)
 ## Misuse cases for CRUD
-1. An identity thief who is attepting to steal employee information -
+1. An identity thief who is attempting to steal employee information -
    The identity thief can do this by attempting to inject a malicious
    executable file into the system which will be run by employees trying
-   to access HR files.  When his is mitigated by restriting access to add
+   to access HR files.  When his is mitigated by restricting access to add
    files to the system to only the most privileged users, the Identity Their
    may attempt to inject executable data into existing HR files (for example a
-   MS Word Macro) when could achive the same result. If this mitigated via
+   MS Word Macro) when could achieve the same result. If this mitigated via
    regular scanning of files for executable code the Identity Thief may attempt
-   to falisify the data in the HR files, for example by changing the contact
+   to falsify the data in the HR files, for example by changing the contact
    phone number to his own phone number and then impersonating an HR employee
-   when he recieved a call.  The best solution to mitigate this is to closely monitor
+   when he received a call.  The best solution to mitigate this is to closely monitor
    changes to the HR files and identify and take action against any users
    modifying them in an inappropriate way.
 
 2. An outsider attempting to access the companies HR files which he is not authorized
    to access - The outsider can monitor the network and read the file contents via
-   the data in the network traffic.  This can be mitigated by ecrypting the files
+   the data in the network traffic.  This can be mitigated by encrypting the files
    as they are transmitted.  The attacker can respond by attacking the encrypting
    keys and exploiting any weak or poorly secured keys.  The company must therefore
    enforce secure key management to combat this attack vector.
 
-3. An internal employee who is attempting to disrupt the HR file managnement system -
+3. An internal employee who is attempting to disrupt the HR file management system -
    The easiest method of doing this is to simply delete the files if the internal
    attacker has that access, in response the company must strictly control who has
    permissions to remove files.  If the attacker is unable to delete the files he
@@ -44,8 +44,8 @@ The file directories can be listed and searched.
    is to keep backups of the files and restore the originals when this action is identified
    and obviously at least remove that users permissions to modify the files.  If the attacker
    has only read access to the files he may render the unreadable by attacking the
-   file sharing service itsself by flooding it with requests, these could be authentication
-   requests or read requests, but if the system is overwhelemed with mailicious requests
+   file sharing service itself by flooding it with requests, these could be authentication
+   requests or read requests, but if the system is overwhelmed with malicious requests
    it may not be able to service legitimate requests. The only mitigation for this is
    to limit the number of requests a user may make and possibly blacklist any user
    identified to be flooding the system with requests.
@@ -57,7 +57,7 @@ Encrypt files in transit – Yes, SAMBA supports native SSL support along with S
 Log monitoring – No, SAMBA does not support log monitoring natively, although it does 
    have the capability to generate robust logging. https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#LOGGING
 
-Permission verification – Yes, SAMBA suppors Access Control Lists (ACL) which 
+Permission verification – Yes, SAMBA supports Access Control Lists (ACL) which 
    enable management of user permissions control.  https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
 
 file access limits - No, Samba does not support limits on file operations
@@ -71,7 +71,7 @@ key management - Yes, the Samba documentation recommends that the private
    key permissions be set to 600 (owner read/write) only, but I was unable to confirm
    if samba enforces this.
       
-scan files for exe code - No, Samba does not contain native facilites for scanning
+scan files for exe code - No, Samba does not contain native facilities for scanning
    files for executable code.
    
 ## OSS Documentation review:
