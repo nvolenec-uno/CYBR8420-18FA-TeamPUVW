@@ -131,7 +131,7 @@ Share-level access options
 
 https://www.samba.org/samba/docs/using_samba/ch09.html
 
-- Samba had bufferoverflow issue on older versions /2.2.x/. CVE-2003-0201 
+- Samba had buffer overflow issue on older versions /2.2.x/. CVE-2003-0201 
 
 ## OSS Documentation review:
 
@@ -202,19 +202,19 @@ https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
 
 User Authentication - Samba requires that users be authenticated through one of several possible
 external authentication services including Active Directory, LDAP or pluggable authentication modules.
-After authentication the Samba client uses a CID to ensure the identity of each user is verfied on 
+After authentication the Samba client uses a CID to ensure the identity of each user is verified on 
 the server message block protocol.
 
-Audit Log - Samba supports anaudit log for Samba client access. This log can be extensively configured
-to monitor discrete events for every typeoffile access event including listing of files.
+Audit Log - Samba supports an audit log for Samba client access. This log can be extensively configured
+to monitor discrete events for every type of file access event including listing of files.
 https://wiki.samba.org/index.php/Setting_up_Audit_Logging
 
 ### OSS Documentation Review
 
 A careful review of the Samba documentation Wiki found several opportunities for missing or 
 incomplete documentation. Though no specific security related items were found in the documentation
-there are numerous technical errors which were discovered. For example the documentation has
-not been updated tp the current Windows 10 clients.
+there are numerous technical errors which were discovered. For example, the documentation has
+not been updated to the current Windows 10 clients.
 	
 There is an overall Samba Bugzilla project including a Documentation page here: 
 https://bugzilla.samba.org/describecomponents.cgi?product=Samba%204.1%20and%20newer
