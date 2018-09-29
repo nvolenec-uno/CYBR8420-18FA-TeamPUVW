@@ -21,11 +21,9 @@ The file directories can be listed and searched.
 In the company, HR manager and employee both access to employee’s directory on file server which contains their application. HR employee also copy job candidate’s application to same folder. 
 Malicious insider who is not authorized to edit this file has granted access and hidden some of competitive candidate’s information intentionally.     
 
-===========================================================================================================================
-
-# Threat: Hide or delete content on file server /Privilege escalation/, DoS /Buffer overflow/
-# Mitigation: Setting permission 
-# Prevention: Prohibit guest account
+### Threat: Hide or delete content on file server /Privilege escalation/, DoS /Buffer overflow/
+### Mitigation: Setting permission 
+### Prevention: Prohibit guest account
 
 To set permission on users individually or group. Prohibit any guest account. 
 
@@ -57,9 +55,7 @@ https://www.samba.org/samba/docs/using_samba/ch09.html
 
 - Samba had bufferoverflow issue on older versions /2.2.x/. CVE-2003-0201 
 
-============================================================================================================================
-
-Documentation review:
+## OSS Documentation review:
 
 -Missing security configs: Firewall configuration during installation Samba. 
 
