@@ -13,7 +13,7 @@ The file directories can be listed and searched.
 # CRUD
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp1.jpeg)
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp2.jpeg)
-# Search Files
+# Search Contents of Files
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misusecasep1-SearchFiles.png)  
 
 ## Description of misuse case scenario:
