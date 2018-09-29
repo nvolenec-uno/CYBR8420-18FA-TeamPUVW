@@ -109,7 +109,7 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    (https://www.samba.org/samba/security/CVE-2017-12150.html)
 
 
-# OSS Documentation Review
+### OSS Documentation Review
 
 A careful review of the Samba documentation Wiki found several opportunities for misisng or 
 incomplete documentation. Though no specific security related items were found in the documentation
