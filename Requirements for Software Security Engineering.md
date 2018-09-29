@@ -39,11 +39,11 @@ The file directories can be listed and searched.
    The easiest method of doing this is to simply delete the files if the internal
    attacker has that access, in response the company must strictly control who has
    permissions to remove files.  If the attacker is unable to delete the files he
-   can modify the files with junk data that will render them unreadable. If a attacker
+   can modify the files with junk data that will render them unreadable. If an attacker
    has legitimate access to modify the files the only way to mitigate this action
    is to keep backups of the files and restore the originals when this action is identified
-   and obviously at least remove that users permissions to modify the files.  If the attacker
-   has only read access to the files he may render the unreadable by attacking the
+   and obviously at least remove that user's permissions to modify the files.  If the attacker
+   has only read access to the files, he may render the unreadable by attacking the
    file sharing service itself by flooding it with requests, these could be authentication
    requests or read requests, but if the system is overwhelmed with malicious requests
    it may not be able to service legitimate requests. The only mitigation for this is
@@ -160,7 +160,7 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
 3. Corrupted directories or file names - this misuse case occurs when the file
    names or directories contain non-displayed or malformed file names, such as
    binary file names, causing the HR manager not to be able to access the files
-   or delete or modify the file names. This was demonstrated as a August 2018
+   or delete or modify the file names. This was demonstrated as an August 2018
    security error in SAMBA. (https://www.samba.org/samba/security/CVE-2018-10858.html)
    
 #### Threat: Directory or Path Traversal, Exploit Sensitive Files, Corrupted File Names or Directories
@@ -187,7 +187,7 @@ https://www.samba.org/samba/docs/using_samba/ch05.html
    symbolic links. (https://www.samba.org/samba/security/CVE-2017-2619.html)
 
 3. Man-in-the-Middle - this misuse case is when someone uses a file link
-   accessed from a network monitor like Wireshark or a email interceptor program
+   accessed from a network monitor like Wireshark or an email interceptor program
    to steal information from the email or the file server. For example, one
    email could contain a link to a file and other emails could contain a user
    id and password to access the file. See Man-in-the-Middle attack patch
