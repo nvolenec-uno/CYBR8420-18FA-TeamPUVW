@@ -16,7 +16,7 @@ The file directories can be listed and searched.
 # Search Files
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misusecasep1-SearchFiles.png)  
 
-# Description of usecase scenario:
+## Description of misuse case scenario:
 
 In the company, HR manager and employee both access to employee’s directory on file server which contains their application. HR employee also copy job candidate’s application to same folder. 
 Malicious insider who is not authorized to edit this file has granted access and hidden some of competitive candidate’s information intentionally.     
