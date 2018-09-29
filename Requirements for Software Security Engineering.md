@@ -186,3 +186,6 @@ could show that a warning needs to be added to Joining a Windows Server 2008 / 2
 is not present on the Windows Server 2008 a note the bug does not affect Windows Server 2008.
 
 
+# Project Board
+Link to GitHub repository that shows internal project task assignments and collaborations.
+https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/projects/1
