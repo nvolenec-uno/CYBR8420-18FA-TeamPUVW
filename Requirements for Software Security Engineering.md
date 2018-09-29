@@ -86,7 +86,8 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    security error in SAMBA. (https://www.samba.org/samba/security/CVE-2018-10858.html)
    
 #### Threat: Directory or Path Traversal, Exploit Sensitive Files, Corrupted File Names or Directories
-#### Mitigation: Run file system checks on corrupted files/backups
+#### Mitigation: Run file system checks on corrupted files/Samba backups
+https://www.samba.org/samba/docs/using_samba/ch05.html
 #### Prevention: Strong authentication and access control list enforcement
 
 # E-mail links to files
