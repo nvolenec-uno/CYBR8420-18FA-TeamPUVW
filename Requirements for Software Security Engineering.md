@@ -116,6 +116,7 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    
 #### Threat: Malicious file injection, File Manipulation and Man-in-the-Middle attack
 #### Mitigation: Use Samba Access Control List (ACL) of files for fine grained control
+https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
 #### Prevention: Strong authentication and access control list enforcement
 
 ### Alignment of security requirements
