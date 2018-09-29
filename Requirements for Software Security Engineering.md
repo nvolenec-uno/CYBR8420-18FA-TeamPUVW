@@ -18,13 +18,13 @@ The file directories can be listed and searched.
    The identity thief can do this by attempting to inject a malicious
    executable file into the system which will be run by employees trying
    to access HR files.  When his is mitigated by restricting access to add
-   files to the system to only the most privileged users, the Identity Their
+   files to the system to only the most privileged users, the Identity Thief
    may attempt to inject executable data into existing HR files (for example a
    MS Word Macro) when could achieve the same result. If this mitigated via
    regular scanning of files for executable code the Identity Thief may attempt
    to falsify the data in the HR files, for example by changing the contact
    phone number to his own phone number and then impersonating an HR employee
-   when he received a call.  The best solution to mitigate this is to closely monitor
+   when he recieved a call.  The best solution to mitigate this is to closely monitor
    changes to the HR files and identify and take action against any users
    modifying them in an inappropriate way.
 
@@ -35,7 +35,7 @@ The file directories can be listed and searched.
    keys and exploiting any weak or poorly secured keys.  The company must therefore
    enforce secure key management to combat this attack vector.
 
-3. An internal employee who is attempting to disrupt the HR file management system -
+3. An internal employee who is attempting to disrupt the HR file managnement system -
    The easiest method of doing this is to simply delete the files if the internal
    attacker has that access, in response the company must strictly control who has
    permissions to remove files.  If the attacker is unable to delete the files he
@@ -57,7 +57,7 @@ Encrypt files in transit – Yes, SAMBA supports native SSL support along with S
 Log monitoring – No, SAMBA does not support log monitoring natively, although it does 
    have the capability to generate robust logging. https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#LOGGING
 
-Permission verification – Yes, SAMBA supports Access Control Lists (ACL) which 
+Permission verification – Yes, SAMBA suppors Access Control Lists (ACL) which 
    enable management of user permissions control.  https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
 
 file access limits - No, Samba does not support limits on file operations
@@ -71,7 +71,7 @@ key management - Yes, the Samba documentation recommends that the private
    key permissions be set to 600 (owner read/write) only, but I was unable to confirm
    if samba enforces this.
       
-scan files for exe code - No, Samba does not contain native facilities for scanning
+scan files for exe code - No, Samba does not contain native facilites for scanning
    files for executable code.
    
 ## OSS Documentation review:
@@ -79,13 +79,13 @@ scan files for exe code - No, Samba does not contain native facilities for scann
    the documentation states that: "The parameter takes the value in KB. If the size
    exceeds the value set, Samba appends .old to the log file name and writes new 
    log entries to a new file."
-   But there is no note of what happenes if the maximum specified file size is
+   But there is no note of what happens if the maximum specified file size is
    reached, moved to the '.old' version of the file and then the log file 
-   exeeds the specified size again.
+   exceeds the specified size again.
    An out of date version of the Samba "Using Samba" book indicates that
    if the .old file already exists it is deleted and replaced by the
    new .old file this gives a vector to delete logs by simply spamming
-   the Samaba server by excessive requests.
+   the Samba server by excessive requests.
 
    We will be submitting a pull request to clarify this beahavior, and
    will attempt verify that the behavior described in the out of date
@@ -131,7 +131,7 @@ Share-level access options
 
 https://www.samba.org/samba/docs/using_samba/ch09.html
 
-- Samba had buffer overflow issue on older versions /2.2.x/. CVE-2003-0201 
+- Samba had bufferoverflow issue on older versions /2.2.x/. CVE-2003-0201 
 
 ## OSS Documentation review:
 
@@ -202,19 +202,19 @@ https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
 
 User Authentication - Samba requires that users be authenticated through one of several possible
 external authentication services including Active Directory, LDAP or pluggable authentication modules.
-After authentication the Samba client uses a CID to ensure the identity of each user is verified on 
+After authentication the Samba client uses a CID to ensure the identity of each user is verfied on 
 the server message block protocol.
 
-Audit Log - Samba supports an audit log for Samba client access. This log can be extensively configured
-to monitor discrete events for every type of file access event including listing of files.
+Audit Log - Samba supports anaudit log for Samba client access. This log can be extensively configured
+to monitor discrete events for every typeoffile access event including listing of files.
 https://wiki.samba.org/index.php/Setting_up_Audit_Logging
 
 ### OSS Documentation Review
 
 A careful review of the Samba documentation Wiki found several opportunities for missing or 
 incomplete documentation. Though no specific security related items were found in the documentation
-there are numerous technical errors which were discovered. For example, the documentation has
-not been updated to the current Windows 10 clients.
+there are numerous technical errors which were discovered. For example the documentation has
+not been updated tp the current Windows 10 clients.
 	
 There is an overall Samba Bugzilla project including a Documentation page here: 
 https://bugzilla.samba.org/describecomponents.cgi?product=Samba%204.1%20and%20newer
