@@ -167,15 +167,22 @@ No one is currently listed as the Samba documentation champion
 
 ## Misuse cases for printing files on a SAMBA server.
 
-1.Treekiller joe wants to spam print jobs to printers to prevent actual jobs from being printed.
+1. Treekiller joe wants to spam print jobs to printers to prevent actual jobs from being printed.  He can do
+   this in samba with multiple methods.  The first method is to send a large number of print jobs such that no one is
+   able to create new print jobs.  The second method is to send overly large prints as to make print jobs take an overly
+   large amount of time preventing access to the printer.
 
-2.The Disruptor tom wants to cause as much harm as possible by interfering with print jobs by altering the print
-  and forcing canceled jobs.
+2. The Disruptor tom wants to cause as much harm as possible by interfering with print jobs by altering the print
+   and forcing canceled jobs.  This could be done by sending or stopping signals to printers.
 
-3.Sells Data for Cash josh wants to steal information about the prints by eavesdropping on the network.
+3. Sells Data for Cash josh wants to steal information about the prints by eavesdropping on the network.
+   He can do this by monitoring the SMB files that are transfered.  The default in samba is to not encrypt SMB files
+   and if the configurations are not set the files are easily eavesdropped on.
 
 ## Prevention
-1.User Authorization - Samba supports user authorization.
+1. User Authorization - Samba supports user authorization with user permissions to control access as well as
+   user authorization with active directory, and this prevents malicous users from altering print jobs or stoping 
+   print stop signals from being transfered.
 
 2. Printer Settings to Limit Jobs - Yes, samba does have the ability to limit the size of prints
    documented here:  https://www.samba.org/samba/docs/old/Samba3-HOWTO/CUPS-printing.html.  
@@ -183,7 +190,7 @@ No one is currently listed as the Samba documentation champion
 
 3. Encrypt Files - Yes samba does allow you to encrypt print files:  
    https://www.linuxjournal.com/content/smbclient-security-windows-printing-and-file-transfer.  
-   Print files are SMB files so the files must be encrypted as such, and the way to do this in samba  is not very powerful.
+   Print files are SMB files so the files must be encrypted as such, and the way to do this in samba is not very powerful.
 
 ## OSS project documentation review.
 As the domain controls in samba are widely used the documentation on setup is very thorough
