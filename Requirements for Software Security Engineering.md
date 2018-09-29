@@ -65,6 +65,7 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
 
 # Listing of files 
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-ListofFiles.png)
+## Misuse cases for e-mail links to files on a Samba server
 1. Path or Directory Traversal - this misuse case is when a file path or directory
    is misconfigured or terminates file name access due to an error. This causes the
    HR manager or employees to not be able to list files on the server. One example
@@ -87,6 +88,8 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
 
 # E-mail links to files
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-EmailLinkstoFiles.png)
+## Misuse cases for e-mail links to files on a Samba server
+
 1. Malicious file injection - this misuse case is when a link is shared with
    a malicious file which could potentially be opened by a recipient which
    would then inject malware on the HR manager or employees client computer.
