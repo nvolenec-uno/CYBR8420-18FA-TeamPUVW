@@ -10,7 +10,7 @@ The files can be shared with other employees in the company outside of the HR de
 The files can be printed using a network attached printer.
 The file directories can be listed and searched.
 
-# CRUD
+# CRUD (Create, Read, Update, and Delete files)
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp1.jpeg)
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCase-CRUDp2.jpeg)
 ## Misuse cases for CRUD
