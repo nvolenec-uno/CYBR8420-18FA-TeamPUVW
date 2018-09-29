@@ -33,10 +33,10 @@ To set permission on users individually or group. Prohibit any guest account.
 
 Samba can handle individual users, guest users and groups share access by using its flags in configuration file. For example:
 
-path = /home/dave 
-comment = Dave's home directory
-writable = yes 
-valid users = dave 
+path = /home/dave  
+comment = Dave's home directory  
+writable = yes  
+valid users = dave   
 
 Share-level access options
 
@@ -84,7 +84,10 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    binary file names, causing the HR manager not to be able to access the files
    or delete or modify the file names. This was demonstrated as a August 2018
    security error in SAMBA. (https://www.samba.org/samba/security/CVE-2018-10858.html)
-
+   
+#### Threat: Directory or Path Traversal, Exploit Sensitive Files, Corrupted File Names or Directories
+#### Mitigation: Run file system checks on corrupted files/backups
+#### Prevention: Strong authentication and access control list enforcement
 
 # E-mail links to files
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-EmailLinkstoFiles.png)
@@ -110,6 +113,10 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
    email could contain a link to a file and other emails could contain a user
    id and password to access the file. See Man-in-the-Middle attack patch
    (https://www.samba.org/samba/security/CVE-2017-12150.html)
+   
+#### Threat: Malicious file injection, File Manipulation and Man-in-the-Middle attack
+#### Mitigation: Use Samba Access Control List (ACL) of files for fine grained control
+#### Prevention: Strong authentication and access control list enforcement
 
 ### Alignment of security requirements
 
