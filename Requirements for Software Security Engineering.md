@@ -65,7 +65,7 @@ https://wiki.archlinux.org/index.php/samba#Configure_Firewall
 
 # Listing of files 
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misuseCasep1-ListofFiles.png)
-## Misuse cases for e-mail links to files on a Samba server
+## Misuse cases for listing of files on a Samba server
 1. Path or Directory Traversal - this misuse case is when a file path or directory
    is misconfigured or terminates file name access due to an error. This causes the
    HR manager or employees to not be able to list files on the server. One example
