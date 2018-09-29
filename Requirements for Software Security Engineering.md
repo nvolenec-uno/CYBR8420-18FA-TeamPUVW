@@ -50,6 +50,47 @@ The file directories can be listed and searched.
    to limit the number of requests a user may make and possibly blacklist any user
    identified to be flooding the system with requests.
    
+## Reflection on SAMBA security features:
+Encrypt files in transit – Yes, SAMBA supports native SSL support along with SSL supported 
+   connections to LDAP servers: https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#LDAPSSL
+
+Log monitoring – No, SAMBA does not support log monitoring natively, although it does 
+   have the capability to generate robust logging. https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#LOGGING
+
+Permission verification – Yes, SAMBA suppors Access Control Lists (ACL) which 
+   enable management of user permissions control.  https://wiki.samba.org/index.php/Setting_up_a_Share_Using_Windows_ACLs
+
+file access limits - No, Samba does not support limits on file operations
+   or file reads. The closest feature Samba has is oplocks wherein a client can
+   read and cache a local copy of the file while editing it, when another client
+   wants to read the same file the Samba server requests
+				
+file backups - Yes, samba supports multiple methods of backing up the files in a samba share.
+
+key management - Yes, the Samba documentation recommends that the private 
+   key permissions be set to 600 (owner read/write) only, but I was unable to confirm
+   if samba enforces this.
+      
+scan files for exe code - No, Samba does not contain native facilites for scanning
+   files for executable code.
+   
+## OSS Documentation review:
+   In "Setting the Maximum Log File Size": https://wiki.samba.org/index.php/Configuring_Logging_on_a_Samba_Server#Setting_the_Maximum_Log_File_Size
+   the documentation states that: "The parameter takes the value in KB. If the size
+   exceeds the value set, Samba appends .old to the log file name and writes new 
+   log entries to a new file."
+   But there is no note of what happenes if the maximum specified file size is
+   reached, moved to the '.old' version of the file and then the log file 
+   exeeds the specified size again.
+   An out of date version of the Samba "Using Samba" book indicates that
+   if the .old file already exists it is deleted and replaced by the
+   new .old file this gives a vector to delete logs by simply spamming
+   the Samaba server by excessive requests.
+
+   We will be submitting a pull request to clarify this beahavior, and
+   will attempt verify that the behavior described in the out of date
+   documentation is correct.
+
 # Search Contents of Files
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/misusecasep1-SearchFiles.png)  
 
