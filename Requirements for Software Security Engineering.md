@@ -140,7 +140,8 @@ No one is currently listed as the Samba documentation champion
    He can do this by monitoring the SMB files that are transfered.  The default in samba is to not encrypt SMB files
    and if the configurations are not set the files are easily eavesdropped on.
 
-## Prevention
+## Alignment of Security Requirements
+
 1. User Authorization - Samba supports user authorization with user permissions to control access as well as
    user authorization with active directory, and this prevents malicous users from altering print jobs or stoping 
    print stop signals from being transfered.
@@ -154,6 +155,7 @@ No one is currently listed as the Samba documentation champion
    Print files are SMB files so the files must be encrypted as such, and the way to do this in samba is not very powerful.
 
 ## OSS project documentation review.
+
 As the domain controls in samba are widely used the documentation on setup is very thorough
 with Active directory, but with the less used NT4 domain controller the documentation is much
 sparser with setting up samba as an NT4 BDC being completly empty.  This leaves some area to add
