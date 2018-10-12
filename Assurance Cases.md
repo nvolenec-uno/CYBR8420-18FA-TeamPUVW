@@ -3,9 +3,9 @@
 ## Goal Structuring Notation and Assurance Cases:
 
 The purpose of this document is construct five assurance claims regarding the security aspects of the
-Samba file server, which is our open source projetc of choice. Assurance claims are "reasoned and compelling
+Samba file server, which is our open source projetc of choice. Assurance claims are: ** "reasoned and compelling
 arguments, which are supported by a body ofevidence, that a system, seervice or organization will operate as
-intended for a defined application in a defined environment."<sup>1</sup>
+intended for a defined application in a defined environment." ** <sup>1</sup>
 
 ### Description of the use case scenario:
 
