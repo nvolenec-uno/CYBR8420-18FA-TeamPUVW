@@ -18,11 +18,13 @@ The file directories can be listed and searched.
 ### Assurance Claims
 
 We examined the following assurance cases for this document:
-1. Samba is protected by strong autentication (Authentication)
-2. Samba is protected from privilege escalation (Privilege Escalation)
-3. Samba is protected from session hijacking (Session Hijacking)
-4. Samba is protected from malicious code injection (Code Injection)
-5. Samba is protected during secure reovery (Server Recovery)
+|No.|Description|Section|
+|-------|------|-----|
+|1. |Samba is protected from authentication protection| (Authentication)|
+|2. |Samba is protected from privilege escalation|(Privilege Escalation)|
+|3. |Samba is protected from session hijacking |(Session Hijacking)|
+|4. |Samba is protected from malicious code injection |(Code Injection)|
+|5. |Samba is protected during secure reovery |(Server Recovery)|
 
 # Authentication
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/authentication.jpeg)
