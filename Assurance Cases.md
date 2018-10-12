@@ -25,30 +25,30 @@ We examined the following assurance cases for this document:
 | 2. | Samba is protected from privilege escalation | (Privilege Escalation) |
 | 3. | Samba is protected from session hijacking | (Session Hijacking) |
 | 4. | Samba is protected from malicious code injection | (Code Injection) |
-| 5. | Samba is protected during secure reovery | (Server Recovery) |
+| 5. | Samba is protected during secure recovery | (Server Recovery) |
 
 # Authentication
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/authentication.jpeg)
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/authentication.png)
 
-
+## Explanation of claims and evidence:
 
 
 # Privilege Escalation
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/privilege.png)  
 
-
+## Explanation of claims and evidence:
 # Session Hijacking
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/sessionhijacking.png)
-
+## Explanation of claims and evidence:
 
 # Code Injection
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/codeinjection.png)
-
+## Explanation of claims and evidence:
 
 
 # Server Recovery
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/serverrecover.png)
-
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/serverrecovery.png)
+## Explanation of claims and evidence:
 
 
 
