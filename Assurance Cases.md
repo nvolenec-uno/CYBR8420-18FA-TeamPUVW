@@ -18,8 +18,9 @@ The file directories can be listed and searched.
 ### Assurance Claims
 
 We examined the following assurance cases for this document:
-| Number | Description | Section |
-| ------- | ------ | ----- |
+
+| Number    | Description   | Section   |
+|:-------:|:------:|:-----:|
 | 1. | Samba is protected from authentication protection | (Authentication) |
 | 2. | Samba is protected from privilege escalation | (Privilege Escalation) |
 | 3. | Samba is protected from session hijacking | (Session Hijacking) |
