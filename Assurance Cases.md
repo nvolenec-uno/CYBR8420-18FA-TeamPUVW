@@ -53,5 +53,5 @@ We examined the following assurance cases for this document:
 Link to GitHub repository that shows internal project task assignments and collaborations.  
 https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/projects/1
 
-<sup1</sup>Goal Structuring Notation Community Standard, Version 2, SCSC-141B
+<sup>1</sup>Goal Structuring Notation Community Standard, Version 2, SCSC-141B
 https://scsc.uk/r141B:1?t=1
