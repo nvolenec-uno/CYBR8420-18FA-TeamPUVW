@@ -87,7 +87,7 @@ https://www.samba.org/samba/docs/using_samba/ch09.html
 
 
 # Server Recovery
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/serverrecovery.png)
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/securerecovery.png)
 ## Explanation of claims and evidence:
 
 
