@@ -55,7 +55,7 @@ Evidence 5.1:
 
 This document shows how to enable Samba's strongest hashing algorithm for the
 storage of user passwords running pbedit with the "--set-nt-hash" argument will
-enable NT hashing for password storage
+enable NT hashing for password storage.
 
 https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html  section on: "--set-nt-hash" option
 
@@ -72,7 +72,7 @@ https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#SMBENCRYPT
 Evidence 7.1:
 
 This document shows Samba's configuration file setting the session inactivty timeout
-Setting "deadtime = 15" will enforce a timeout of 15 minutes for inactive sessions 
+Setting "deadtime = 15" will enforce a timeout of 15 minutes for inactive sessions.
 
 https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#DEADTIME
 
