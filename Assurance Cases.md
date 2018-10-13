@@ -34,7 +34,7 @@ We examined the following assurance cases for this document:
 
 
 # Privilege Escalation
-![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/privilege.png)  
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/privilegeescalation.png)  
 
 ## Explanation of claims and evidence:
 # Session Hijacking
