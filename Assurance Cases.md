@@ -184,6 +184,31 @@ https://www.samba.org/samba/docs/using_samba/ch08.html
 # Server Recovery
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/securerecovery.png)
 ## Explanation of claims and evidence:
+## Secure Recovery
+
+### Evidence 2.1: Samba documentationon smb.conf recovery
+Samba has the ability recover the original smb.conf file to restore a crashed server
+https://superuser.com/questions/69045/how-do-i-get-back-the-default-samba-configuration-file-debian-based-system
+https://forum.qnap.com/viewtopic.php?t=110805
+
+### Evidence 5.1: Samba documentation on Active Directory clone database
+Samba clones a copy of the AD database to enable recovery
+https://wiki.samba.org/index.php/Back_up_and_Restoring_a_Samba_AD_DC
+
+
+### Evidence 5.2: Samba documentation on offline Domain Controller backup
+Samba recovers the metadata and the directory files for offline Domain controller backups
+https://wiki.samba.org/index.php/Back_up_and_Restoring_a_Samba_AD_DC
+
+### Evidence 6.1: Samba documentation on "--offline-login" Domain controller
+Samba has the capability to use a offline login to recover a domain controller
+https://wiki.samba.org/index.php/Back_up_and_Restoring_a_Samba_AD_DC
+
+### Evidence 7.1: Samba documentaion on SMB operations locks
+Samba uses operations locks to control file access. If a server fails the mechanism
+for recoverying fromlocked files is described.
+
+https://www.oreilly.com/openbook/samba/book/ch05_05.html
 
 
 
