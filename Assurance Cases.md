@@ -53,7 +53,7 @@ E 7.1 https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#DEADTIME
 Samba has a security feature to encrypt network connection. 
 smb encrypt = auto [global] in smb.conf file. 
 
-Test: Wireshark capture on TCP stream, port 445.
+Test: Tested by wireshark capture on TCP stream, port 445.
 
 https://serverfault.com/questions/657942/encrypting-smb-traffic-with-samba
 
@@ -64,7 +64,8 @@ There are five main ways to use pdbedit: adding a user account, removing a user 
 https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html
 
 ### Evidence 6.1: 
-Samba documentation.
+Samba can handle its users access by group and individually. Also there is an option for guest user who does not have user name and password. 
+
 https://www.samba.org/samba/docs/using_samba/ch09.html 
 
 ### Evidence 7.1: 
@@ -87,6 +88,7 @@ http://www.informit.com/articles/article.aspx?p=20968&seqNum=3
 
 ### Evidence 10.1: 
 Samba security mechanism can authenticate users by configuring on smb.conf file.
+
 https://www.samba.org/samba/docs/using_samba/ch09.html 
 
 
