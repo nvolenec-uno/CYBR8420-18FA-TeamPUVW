@@ -31,7 +31,15 @@ We examined the following assurance cases for this document:
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/authentication.png)
 
 ## Explanation of claims and evidence:
+E 3.1 https://winprotocoldoc.blob.core.windows.net/productionwindowsarchives/MS-SMB/[MS-SMB].pdf  page 135
 
+E 4.1 https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html section on "--account-policy account-policy" option
+
+E 5.1 https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html  section on: "--set-nt-hash" option
+
+E 6.1 https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#SMBENCRYPT
+
+E 7.1 https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#DEADTIME
 
 # Privilege Escalation
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/privilegeescalation.png)  
