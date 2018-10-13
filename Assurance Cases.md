@@ -41,7 +41,7 @@ We examined the following assurance cases for this document:
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/sessionhijacking.png)
 ## Explanation of claims and evidence:
 
-###Evidence 3.1. 
+### Evidence 3.1. 
 Samba has a security feature to encrypt network connection. 
 smb encrypt = auto [global] in smb.conf file. 
 
