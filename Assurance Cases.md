@@ -79,7 +79,36 @@ https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#DEADTIME
 
 # Privilege Escalation
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/privilegeescalation.png)  
+## Privilege Escalation
 
+### Evidence 3.1: Scripting language esclation with XSS controls
+
+The default configurationof Samba does not include the scripting language interface
+used in the Samba Web Authentication tool by default.
+https://www.samba.org/samba/security/CVE-2013-0214.html
+
+### Evidence 3.2: DNS resolution required for XSS attacks
+
+Samba requires a DNS server be administered as part of the Active Directory integration.
+https://wiki.samba.org/index.php/DNS_Administration
+Samba patched an internal error with DNS server resolution in Samba 4.
+https://lists.samba.org/archive/samba/2014-August/184458.html
+
+### Evidence 4.1: Operating System Executable privilege protection
+SambaCry was a remote code execution CVE which Samba famously has patched.
+https://thehackernews.com/2017/05/samba-rce-exploit.html
+
+### Evidence 4.2: Samba libraries have external controls
+
+Samba had a CVE which was repaired that allowed external libraries to be uploaded and
+called by the server to execute it. This security patch was identified by:
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7494
+
+### Evidence 5.1: Server Message Block requests
+
+Microsoft had a previous CVE which was repaired that allowed external SMB protocol 
+requests to execute a denial of service attack on Samba.
+https://www.secureworks.com/blog/attacking-windows-smb-zero-day-vulnerability
 ## Explanation of claims and evidence:
 # Session Hijacking
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/sessionhijacking.png)
