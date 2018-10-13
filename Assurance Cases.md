@@ -31,15 +31,51 @@ We examined the following assurance cases for this document:
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/authentication.png)
 
 ## Explanation of claims and evidence:
-E 3.1 https://winprotocoldoc.blob.core.windows.net/productionwindowsarchives/MS-SMB/[MS-SMB].pdf  page 135
 
-E 4.1 https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html section on "--account-policy account-policy" option
 
-E 5.1 https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html  section on: "--set-nt-hash" option
+Evidence 3.1:
 
-E 6.1 https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#SMBENCRYPT
+This document shows the SMB authentication exchange process:
+Samba implements the robust SMB authentication process wherein there are multiple exchanges between
+the server and client to establish a client's session.
 
-E 7.1 https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#DEADTIME
+https://winprotocoldoc.blob.core.windows.net/productionwindowsarchives/MS-SMB/[MS-SMB].pdf  page 135
+
+
+
+Evidence 4.1:
+
+This document shows Samba's mechanism for setting an account policy like "bad lockout attempt"
+which dictates how many failed login attempts are allowed before a user's account is locked.
+
+https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html section on "--value account-policy-value" option
+
+
+Evidence 5.1:
+
+This document shows how to enable Samba's strongest hashing algorithm for the
+storage of user passwords running pbedit with the "--set-nt-hash" argument will
+enable NT hashing for password storage
+
+https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html  section on: "--set-nt-hash" option
+
+
+
+Evidence 6.1:
+This document shows Samba's configuration file setting for turning on network encryption.
+Setting smb encrypt to "required" will turn on and force the use of network encryption.
+
+https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#SMBENCRYPT
+
+
+
+Evidence 7.1:
+
+This document shows Samba's configuration file setting the session inactivty timeout
+Setting "deadtime = 15" will enforce a timeout of 15 minutes for inactive sessions 
+
+https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#DEADTIME
+
 
 # Privilege Escalation
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/privilegeescalation.png)  
