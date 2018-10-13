@@ -71,7 +71,7 @@ https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#SMBENCRYPT
 
 Evidence 7.1:
 
-This document shows Samba's configuration file setting the session inactivty timeout, for example setting "deadtime = 15" will enforce a timeout of 15 minutes for inactive sessions.
+This document shows Samba's configuration file setting the session inactivity timeout, for example setting "deadtime = 15" will enforce a timeout of 15 minutes for inactive sessions.
 
 https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#DEADTIME
 
@@ -80,21 +80,21 @@ https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html#DEADTIME
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/privilegeescalation.png)  
 ## Privilege Escalation
 
-### Evidence 3.1: Scripting language esclation with XSS controls
+### Evidence 3.1: Scripting language escalation with XSS controls
 
-The default configurationof Samba does not include the scripting language interface
+The default configuration of Samba does not include the scripting language interface
 used in the Samba Web Authentication tool by default.
 https://www.samba.org/samba/security/CVE-2013-0214.html
 
 ### Evidence 3.2: DNS resolution required for XSS attacks
 
-Samba requires a DNS server be administered as part of the Active Directory integration.
+Samba requires a DNS server be administered as part of the Active Directory integration.  
 https://wiki.samba.org/index.php/DNS_Administration  
 Samba patched an internal error with DNS server resolution in Samba 4.
 https://lists.samba.org/archive/samba/2014-August/184458.html
 
 ### Evidence 4.1: Operating System Executable privilege protection
-SambaCry was a remote code execution CVE which Samba famously has patched.
+SambaCry was a remote code execution CVE which Samba famously has patched.  
 https://thehackernews.com/2017/05/samba-rce-exploit.html
 
 ### Evidence 4.2: Samba libraries have external controls
@@ -162,7 +162,7 @@ https://www.samba.org/samba/docs/using_samba/ch09.html
 ## Explanation of claims and evidence:
 
 ### Evidence 3.1
-Because of linux, only users with execute permissions are allowed to execute files on a samba share.
+Because of Linux, only users with execute permissions are allowed to execute files on a samba share.
 
 https://wiki.samba.org/index.php/Setting_up_a_Share_Using_POSIX_ACLs
 https://www.samba.org/samba/docs/using_samba/ch08.html
@@ -175,7 +175,7 @@ The samba documentation shows that the Samba Web administration tool is not inst
 
 https://www.samba.org/samba/docs/4.0/man-html/swat.8.html
 ## Evidence 8.1
-On linux ony users can execute files and on our implementation there  is no user for samba to
+On Linux only users can execute files and on our implementation there  is no user for samba to
 manipulate files as.  Thus, Samba connection scripts can not execute files.
 
 https://www.samba.org/samba/docs/using_samba/ch08.html
@@ -185,8 +185,8 @@ https://www.samba.org/samba/docs/using_samba/ch08.html
 ## Explanation of claims and evidence:
 ## Secure Recovery
 
-### Evidence 2.1: Samba documentationon smb.conf recovery
-Samba has the ability recover the original smb.conf file to restore a crashed server
+### Evidence 2.1: Samba documentation smb.conf recovery
+Samba has the ability recover the original smb.conf file to restore a crashed server 
 https://superuser.com/questions/69045/how-do-i-get-back-the-default-samba-configuration-file-debian-based-system
 https://forum.qnap.com/viewtopic.php?t=110805
 
@@ -205,7 +205,7 @@ https://wiki.samba.org/index.php/Back_up_and_Restoring_a_Samba_AD_DC
 
 ### Evidence 7.1: Samba documentation on SMB operations locks
 Samba uses operations locks to control file access. If a server fails the mechanism
-for recoverying fromlocked files is described.
+for recovering from locked files is described.
 
 https://www.oreilly.com/openbook/samba/book/ch05_05.html
 
