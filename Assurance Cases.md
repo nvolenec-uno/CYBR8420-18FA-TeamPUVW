@@ -90,7 +90,7 @@ https://www.samba.org/samba/security/CVE-2013-0214.html
 ### Evidence 3.2: DNS resolution required for XSS attacks
 
 Samba requires a DNS server be administered as part of the Active Directory integration.
-https://wiki.samba.org/index.php/DNS_Administration
+https://wiki.samba.org/index.php/DNS_Administration  
 Samba patched an internal error with DNS server resolution in Samba 4.
 https://lists.samba.org/archive/samba/2014-August/184458.html
 
