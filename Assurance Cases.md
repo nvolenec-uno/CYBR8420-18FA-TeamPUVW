@@ -41,6 +41,46 @@ We examined the following assurance cases for this document:
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/sessionhijacking.png)
 ## Explanation of claims and evidence:
 
+###Evidence 3.1. 
+Samba has a security feature to encrypt network connection. 
+smb encrypt = auto [global] in smb.conf file. 
+
+Test: Wireshark capture on TCP stream, port 445.
+
+https://serverfault.com/questions/657942/encrypting-smb-traffic-with-samba
+
+###Evidence 4.1 
+The pdbedit tool uses the passdb modular interface and is independent from the kind of users database used (currently there are smbpasswd, ldap, nis+ and tdb based and more can be added without changing the tool).
+There are five main ways to use pdbedit: adding a user account, removing a user account, modifying a user account, listing user accounts, importing users accounts.
+
+https://www.samba.org/samba/docs/current/man-html/pdbedit.8.html
+
+###Evidence 6.1: 
+Samba documentation.
+https://www.samba.org/samba/docs/using_samba/ch09.html 
+
+###Evidence 7.1: 
+Samba can disable inactive sessions by configuring on smb.conf file - global config. deadtime=10 -> (10 minutes after, session will be disabled). Keepalive configuration is intended to set wait time between "Netbios keepalive packets". Keepalive packets are used to ping a client to make sure connection still alive.  
+
+Test plan: to connect remotehost and lock pc for 10 minutes. Check on server side "smbstatus -b"
+Evidence 8.1: Every access with authentication checked against PAM library. PAM can be configured to check users authentication. pam_access delivers log-daemon-style login access control using login/domain names depending on pre-defined rules in /etc/security/access.conf
+
+https://www.ibm.com/developerworks/library/l-pam/index.html
+
+Test plan: To configure Domain control, and disable one user. After that, trying to connect to Samba share by using disabled user's credentials. 
+
+###Evidence 9.1: 
+Every access with authentication checked against PAM library /pam.security.so/ 
+pam_securetty.so module checks to see that the requested user is allowed to log in at the console in question by comparing the user's login location against the /etc/securetty file. This action is required; if it fails, the authentication request will be rejected after all other actions have been completed.
+
+http://www.informit.com/articles/article.aspx?p=20968&seqNum=3
+
+###Evidence 10.1: 
+Samba security mechanism can authenticate users by configuring on smb.conf file.
+https://www.samba.org/samba/docs/using_samba/ch09.html 
+
+
+
 # Code Injection
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/codeinjection.png)
 ## Explanation of claims and evidence:
