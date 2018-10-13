@@ -203,7 +203,7 @@ https://wiki.samba.org/index.php/Back_up_and_Restoring_a_Samba_AD_DC
 Samba has the capability to use a offline login to recover a domain controller
 https://wiki.samba.org/index.php/Back_up_and_Restoring_a_Samba_AD_DC
 
-### Evidence 7.1: Samba documentaion on SMB operations locks
+### Evidence 7.1: Samba documentation on SMB operations locks
 Samba uses operations locks to control file access. If a server fails the mechanism
 for recoverying fromlocked files is described.
 
