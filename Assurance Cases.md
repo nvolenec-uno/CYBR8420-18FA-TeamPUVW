@@ -162,6 +162,24 @@ https://www.samba.org/samba/docs/using_samba/ch09.html
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/codeinjection.png)
 ## Explanation of claims and evidence:
 
+### Evidence 3.1
+Because of linux, only users with execute permissions are allowed to execute files on a samba share.
+
+https://wiki.samba.org/index.php/Setting_up_a_Share_Using_POSIX_ACLs
+https://www.samba.org/samba/docs/using_samba/ch08.html
+### Evidence 4.1
+The Samba bug tracker shows that if there are any buffer overflow errors that they get fixed or resolved in a timely manner.
+
+https://bugzilla.samba.org/buglist.cgi?bug_status=__all__&content=Buffer%20Overflow&no_redirect=1&order=Importance&product=&query_format=specific
+### Evidence 6.1
+The samba documentation shows that the Samba Web administration tool is not installed or enabled by default.
+
+https://www.samba.org/samba/docs/4.0/man-html/swat.8.html
+## Evidence 8.1
+On linux ony users can execute files and on our implementation there  is no user for samba to
+manipulate files as.  Thus, Samba connection scripts can not execute files.
+
+https://www.samba.org/samba/docs/using_samba/ch08.html
 
 # Server Recovery
 ![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/securerecovery.png)
