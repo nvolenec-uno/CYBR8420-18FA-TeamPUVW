@@ -1,5 +1,15 @@
+Level 0 DFDs
+  ![CRUD DFD0](CYBR8420-18FA-TeamPUVW/include/crud_dfd_level_0.PNG)
+  ![email DFD0](CYBR8420-18FA-TeamPUVW/include/email_dfd_level_0.PNG)
+  ![print DFD0](CYBR8420-18FA-TeamPUVW/include/print_dfd_level_0.PNG)
+
+Level 1 DFD
+   <CYBR8420-18FA-TeamPUVW/include/Samba_Level_1.htm>
+
+
+
 Summary of Samba software design for STRIDE threats identified in DFD
-  In general Samba has fairly robust mitigations for the identified STRIDE threats.  Samba is generally secure from spoofing due to
+  In general Samba has fairly robust mitigation for the identified STRIDE threats.  Samba is generally secure from spoofing due to
 authentication controls and the fact that Samba runs on a restricted port and hence protected by operating system controls.  Samba is
 generally secure from tampering due to authentication provided by the SMB protocol that Samba implements.  Samba is generally secure from
 repudiation because it can be run with robust logging enabled.  Since Samba can be configured to use encryption for all communications
