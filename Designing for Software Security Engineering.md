@@ -31,7 +31,7 @@
    As a pdf <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/Samba_Level_1.pdf>
 
 
-###Summary of Samba software design for STRIDE threats identified in DFD
+### Summary of Samba software design for STRIDE threats identified in DFD
 
   In general Samba has fairly robust mitigation for the identified STRIDE threats.  Samba is generally secure from spoofing due to
 authentication controls and the fact that Samba runs on a restricted port and hence protected by operating system controls.  Samba is
