@@ -1,13 +1,33 @@
-Level 0 DFDs
+# University of Nebraska Omaha
+
+# CYBR 8420 Software Assurance
+
+### November 7, 2018
+
+## Team PUVW members:
+
+### Chinguun Purevdagva <cpurevdagva@unomaha.edu>
+
+### Jackson Urrutia <jurrutia@unomaha.edu>
+
+### Nick Volenec <nvolenec@unomaha.edu>
+
+### Bob Wilmes <rwilmes@unomaha.edu>
+
+
+### Level 0 DFDs
+
   ![CRUD DFD0](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/crud_dfd_level_0.PNG)
   ![email DFD0](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/email_dfd_level_0.PNG)
   ![print DFD0](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/print_dfd_level_0.PNG)
   ![search DFD0](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/Notes/search_dfd_level_0.PNG)
   ![list DFD0](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/Notes/list_dfd_level_0.PNG)
 
-Level 1 DFD
+### Level 1 DFD
+
    <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/Samba_Level_1.htm>
 
+   as a pdf <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/Samba_Level_1.pdf>
 
 
 Summary of Samba software design for STRIDE threats identified in DFD
