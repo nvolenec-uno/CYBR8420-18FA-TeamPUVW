@@ -2,6 +2,7 @@
 
 # CYBR 8420 Software Assurance
 
+### Assignment: Designing for Software Security Engineering
 ### November 7, 2018
 
 ## Team PUVW members:
@@ -27,10 +28,11 @@
 
    <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/Samba_Level_1.htm>
 
-   as a pdf <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/Samba_Level_1.pdf>
+   As a pdf <https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/Samba_Level_1.pdf>
 
 
-Summary of Samba software design for STRIDE threats identified in DFD
+###Summary of Samba software design for STRIDE threats identified in DFD
+
   In general Samba has fairly robust mitigation for the identified STRIDE threats.  Samba is generally secure from spoofing due to
 authentication controls and the fact that Samba runs on a restricted port and hence protected by operating system controls.  Samba is
 generally secure from tampering due to authentication provided by the SMB protocol that Samba implements.  Samba is generally secure from
