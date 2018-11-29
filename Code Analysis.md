@@ -6,10 +6,10 @@
 
 ### 1. Environmental Variable Passed To System Call
 
-Source code: /source4/client/client.c<br/>  
-Line: 966 - 969<br/>  
-Reference: CWE-214<br/>  
-Risk: High (ENV02-J, STR07-C)<br/>  
+Source code: /source4/client/client.c<br/>
+Line: 966 - 969<br/>
+Reference: CWE-214<br/>
+Risk: High (ENV02-J, STR07-C)<br/>
 
 ### 2. Missing Default Case in Switch Statement
 
