@@ -52,13 +52,13 @@ Figure 4 - Sonarcloud.io Master screen showing Samba on Github<br/>
 ![Sonarcloud1](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/scloud5.png)
 Figure 5 - Sonarcloud.io Master screen showing Samba on Github<br/>  
 ![Sonarcloud1](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/scloud6.png)
-Figure 6 - Sonarcloud.io Master screen showing Samba on Github<br/>  
+Figure 6 - Sonarcloud.io Master screen showing Samba on Github<br/>    
 ![Sonarcloud1](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/scloud7.png)
-Figure 7 - Sonarcloud.io Master screen showing Samba on Github<br/>  
+Figure 7 - Sonarcloud.io Master screen showing Samba on Github<br/>    
 ![Sonarcloud1](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/scloud8.png)
-Figure 8 - Sonarcloud.io Master screen showing Samba on Github<br/>     
+Figure 8 - Sonarcloud.io Master screen showing Samba on Github<br/>       
 ![Sonarcloud1](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/scloud9.png)
-Figure 9 - Sonarcloud.io Master screen showing Samba on Github<br/>   
+Figure 9 - Sonarcloud.io Master screen showing Samba on Github<br/>     
 ![Sonarcloud1](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/scloud10.png)
-Figure 10 - Sonarcloud.io Master screen showing Samba on Github<br/>   
+Figure 10 - Sonarcloud.io Master screen showing Samba on Github<br/>     
 
