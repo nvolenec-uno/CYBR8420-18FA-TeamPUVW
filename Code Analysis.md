@@ -2,6 +2,11 @@
 
 ## Code Review Strategy
 
+Execute an automated scan using SonarQube and Cppcheck static analysis tools of the Samba open source project on Git Hub.
+The attached graphics are from https://SonarCloud.io web site of the results.
+The automated scan showed 2 security errors for 1,422,846 lines of source code in 3,952 files.
+We found an addition 3 legitimate security errors which are described in the manual review section below.
+
 ## Manual Code Review Findings
 
 ### 1. Environmental Variable Passed To System Call
