@@ -40,4 +40,5 @@ Reference: CWE-676, CWE-120<br/>
 Risk: High (STR07-C)<br/>
 
 ## SonarCloudio.io Analysis Images
-(https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/include/SolarCloud1.jpg)
+(https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/tree/master/include/Solarcloud1.jpg)
+
