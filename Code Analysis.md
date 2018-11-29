@@ -38,3 +38,6 @@ Source code: /examples/libsmbclient/testbrowse.c<br/>
 Line: 243 - 244<br/>
 Reference: CWE-676, CWE-120<br/>
 Risk: High (STR07-C)<br/>
+
+## SonarCloudio.io Analysis Images
+![cve-history](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/SolarCloud1.jpg)
