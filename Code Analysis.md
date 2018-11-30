@@ -39,6 +39,30 @@ Line: 243 - 244<br/>
 Reference: CWE-676, CWE-120<br/>
 Risk: High (STR07-C)<br/>
 
+
+##  Server Recovery Use Case - Manual Code Review</br>
+
+A manual review of Samba source for module Samba/source4/smbd/server.c is the primary modulehandling startup</br>
+and recovery. There was one error in the module:</br>
+</br>
+# Error 1 - Null pointer</br>
+</br>
+/*</br>
+  recursively delete a directory tree</br>
+*/</br>
+</br>
+static void recursive_delete(const char *path)</br>
+{</br>
+	DIR *dir;</br>
+	struct dirent *de;</br>
+	dir = opendir(path);</br>
+</br>
+Line 66 is passed a path as a parameter (const char *path) which isn't checked for a NULL pointer.</br>
+This covered by CWE-476 NULL Pointer Derefernce</br>
+https://cwe.mitre.org/data/definitions/476.html</br>
+</br>
+This was the only security bug manually discovered in the main driver module "smbd.c"</br>
+
 ## SonarCloud Analysis 
 
 ![Sonarcloud1](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/scloud1.png)  
