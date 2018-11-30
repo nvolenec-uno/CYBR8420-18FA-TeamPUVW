@@ -45,7 +45,7 @@ Risk: High (STR07-C)<br/>
 A manual review of Samba source for module Samba/source4/smbd/server.c is the primary modulehandling startup</br>
 and recovery. There was one error in the module:</br>
 </br>
-# Error 1 - Null pointer</br>
+### Error 1 - Null pointer</br>
 </br>
 /*</br>
   recursively delete a directory tree</br>
