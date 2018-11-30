@@ -63,7 +63,7 @@ Figure 9 - Sonarcloud.io Master screen showing Samba on Github<br/>
 Figure 10 - Sonarcloud.io Master screen showing Samba on Github<br/>     
 
 ## Cppcheck Scan Results
-
+```
 nvolenec@mintleaf ~/samba $ cppcheck -f ./samba-4.9.2/ > /home/nvolenec/samba_cppchec_scan.txt
 [samba-4.9.2/ctdb/common/ctdb_io.c:421]: (error) Boolean value assigned to pointer.
 [samba-4.9.2/ctdb/common/ctdb_ltdb.c:60]: (error) Analysis failed. If the code is valid then please report this failure.
@@ -190,3 +190,4 @@ nvolenec@mintleaf ~/samba $ cppcheck -f ./samba-4.9.2/ > /home/nvolenec/samba_cp
 [samba-4.9.2/third_party/zlib/contrib/minizip/zip.c:613]: (error) Memory leak: zi
 [samba-4.9.2/third_party/zlib/contrib/minizip/zip.c:956]: (error) Uninitialized variable: t
 [samba-4.9.2/third_party/zlib/examples/zran.c:224]: (error) Common realloc mistake: 'index' nulled but not freed upon failure
+```
