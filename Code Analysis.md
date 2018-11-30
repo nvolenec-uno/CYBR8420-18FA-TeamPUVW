@@ -95,6 +95,48 @@ These were the only security bugs manually discovered in the main driver module 
 Bypassing these algorithms could potentially lead to privilege escalation by obtaining</br>
 elevated privileges.</br>
 
+## Authentication Assurance Case - Code Review
+
+The following bugs were identified by CodeSonar in code related to Authentication:
+
+
+auth/credentials/credentials.c  
+2 instances of "remove any side effects from right hand operands of logical && or || operators" on lines 817 and 818
+
+
+`auth/gensec/spnego.c`  
+&nbsp;&nbsp;&nbsp;&nbsp;1 bug-"return will never be executed" on line 1905  
+`source4/auth/ntlm/auth.c`  
+&nbsp;&nbsp;&nbsp;&nbsp;1 bug-"remove this empty statement" on line 275  
+`ource4/auth/ntlm/auth_util.c`  
+&nbsp;&nbsp;&nbsp;&nbsp;1 bug-"'break' will never be executed" on line 176  
+`source4/auth/gensec/gensec_krb5.c`  
+&nbsp;&nbsp;&nbsp;&nbsp;1 bug-"'break' will never be executed" on line 419  
+&nbsp;&nbsp;&nbsp;&nbsp;2 instances of "Assigned value is garbage or undefined" on lines 569 and 638  
+`source4/auth/gensec/gensec_gssapi.c`  
+&nbsp;&nbsp;&nbsp;&nbsp;1 bug-"Remove this misleading "init_sec_context_done" label." on line 620  
+&nbsp;&nbsp;&nbsp;&nbsp;1 bug-"'break' will never be executed" on line 800  
+
+
+
+
+The following bugs were identified by cppcheck in code related to Authentication:  
+
+`[samba-4.9.2/source4/auth/kerberos/kerberos_util.c:532]: (error) syntax error`  
+`[samba-4.9.2/source3/auth/pampass.c:684]: (error) syntax error`  
+`[samba-4.9.2/source3/auth/pass_check.c:258]: (error) syntax error`  
+`[samba-4.9.2/source4/auth/kerberos/kerberos_util.c:532]: (error) syntax error`  
+
+
+All of the CodeSonar and cppcheck bugs that were identified were researched and identified as false positives
+
+A manual review of the following pieces of Samba code found no bugs:  
+`source4\auth\pyauth.c`  
+`source4\auth\sam.c`  
+`source4\auth\samba_server_gensec.c`  
+`source4\auth\session.c`  
+`source4\auth\system_session.c`  
+`source4\auth\unix_token.c`  
 
 
 
