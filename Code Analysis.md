@@ -63,6 +63,40 @@ https://cwe.mitre.org/data/definitions/476.html</br>
 </br>
 This was the only security bug manually discovered in the main driver module "smbd.c"</br>
 
+
+##  Privilege Escalation Use Case - Manual Code Review</br>
+
+A manual review of Samba source for module Samba/lib/crypto found two bugs which have been identified
+which could allow malicious user to falsify a crypto claim</br>
+There was one error in the module aes_ccm_128.c line 35:</br>
+</br>
+AES_set_encrypt_key(K, 128, &ctx->aes_key);</br>
+	memcpy(ctx->nonce, N, AES_CCM_128_NONCE_SIZE);</br>
+</br>
+This covered by CWE-476 NULL Pointer Derefernce</br>
+https://cwe.mitre.org/data/definitions/476.html</br>
+</br>
+There was one error in the module aes_ccm_128.c line 89:</br>
+</br>
+	/*</br>
+	 * Step 2: generate J0</br>
+	 */</br>
+	memcpy(ctx->J0, IV, AES_GCM_128_IV_SIZE);</br>
+	aes_gcm_128_inc32(ctx->J0);</br>
+</br>
+Line 89 is passed a path as a parameter (ctx->JO) which isn't checked for a NULL pointer.</br>
+This covered by CWE-476 NULL Pointer Derefernce</br>
+https://cwe.mitre.org/data/definitions/476.html</br>
+</br>
+
+These were the only security bugs manually discovered in the main driver module lib/crypto</br>
+Bypassing these algorithms could potentially lead to privilege escalation by obtaining</br>
+elevated privileges.</br>
+
+
+
+
+
 ## SonarCloud Analysis 
 
 ![Sonarcloud1](https://github.com/nvolenec-uno/CYBR8420-18FA-TeamPUVW/blob/master/include/scloud1.png)  
