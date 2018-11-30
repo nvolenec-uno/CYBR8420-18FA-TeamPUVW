@@ -40,7 +40,7 @@ Reference: CWE-676, CWE-120<br/>
 Risk: High (STR07-C)<br/>
 
 
-##  Server Recovery Use Case - Manual Code Review</br>
+##  Server Recovery Assurance Case - Manual Code Review</br>
 
 A manual review of Samba source for module Samba/source4/smbd/server.c is the primary modulehandling startup</br>
 and recovery. There was one error in the module:</br>
@@ -64,11 +64,13 @@ https://cwe.mitre.org/data/definitions/476.html</br>
 This was the only security bug manually discovered in the main driver module "smbd.c"</br>
 
 
-##  Privilege Escalation Use Case - Manual Code Review</br>
+##  Privilege Escalation Assurance Case - Manual Code Review</br>
 
 A manual review of Samba source for module Samba/lib/crypto found two bugs which have been identified
 which could allow malicious user to falsify a crypto claim</br>
-There was one error in the module aes_ccm_128.c line 35:</br>
+</br>
+### Error 1 - Null pointer</br>
+</br>There was one error in the module aes_ccm_128.c line 35:</br>
 </br>
 AES_set_encrypt_key(K, 128, &ctx->aes_key);</br>
 	memcpy(ctx->nonce, N, AES_CCM_128_NONCE_SIZE);</br>
@@ -76,6 +78,8 @@ AES_set_encrypt_key(K, 128, &ctx->aes_key);</br>
 This covered by CWE-476 NULL Pointer Derefernce</br>
 https://cwe.mitre.org/data/definitions/476.html</br>
 </br>
+### Error 2 - Null pointer</br>
+</br></br>
 There was one error in the module aes_ccm_128.c line 89:</br>
 </br>
 	/*</br>
