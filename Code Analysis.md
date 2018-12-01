@@ -2,8 +2,9 @@
 
 ## Code Review Strategy
 
-Our code review strategy began with running some automated scanning tools.  The automated scanning tools that we were able to run were SonarQube and Cppcheck.  The SonarQube already had scanned Samba and Cppcheck was able to scan Samba after being downloaded.  The SonarQube scan showed 2 security errors for 1,422,846 lines of source code in 3,952 files and 877 bugs.  The Cppcheck scan showed a few errors and potential threats.  Based on the results from the scans, we manually reviewed the code focusing on threats and code that relate to our 5 assurance cases.  When we found a potential vulnerability, we would have someone else look over the same code and if they also thought it was a vulnerability as well, we added that to our list of vulnerability findings.
-Below are the findings from the automated code scanning.
+Our code review strategy began with running some automated scanning tools.  The automated scanning tools that we were able to run were SonarQube and Cppcheck.  The SonarQube already had scanned Samba and Cppcheck was able to scan Samba after being downloaded.  The SonarQube scan showed 2 security errors for 1,422,846 lines of source code in 3,952 files and 877 bugs.  The Cppcheck scan showed a few errors and potential threats.  Based on the results from the scans, we manually reviewed the code focusing on threats and code that relate to our 5 assurance cases.  When we found a potential vulnerability, we would have someone else look over the same code and if they also thought it was a vulnerability as well, we added that to our list of vulnerability findings.  
+
+At the end are the findings from the automated code scanning.  
 
 ## Manual Code Review Findings
 
@@ -161,10 +162,10 @@ Environmental Variable Passed To System Call
 	pager_cmd = talloc_asprintf(ctx, "%s %s",(pager? pager:DEFAULT_PAGER), lname);
 	rc = system(pager_cmd);
 ```
-CWE-214: Information Exposure Through Process Environment
+CWE-214: Information Exposure Through Process Environment  
 https://cwe.mitre.org/data/definitions/214.html
 
-The issue with this vulnerability is that if someone is able to alter the environment
+The issue with this bug is that if someone is able to alter the environment
 variable "PAGER" they could point the variable to their own code possibly leading to
 code injection.
 
