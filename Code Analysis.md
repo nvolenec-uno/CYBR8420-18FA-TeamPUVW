@@ -138,6 +138,29 @@ A manual review of the following pieces of Samba code found no bugs:
 `source4\auth\system_session.c`  
 `source4\auth\unix_token.c`  
 
+## Code Injection Assurance Case - Code Review
+
+There were no bugs or vulnerabilities that related to code injection.
+
+The code that would be most vulnerable to code injection are the parts of code that
+deal with the different scripts such as startup scripts.
+Specifically dtdb\common\event_script.c which had no bugs and a manual review found no
+security vulnerabilities.
+
+Our manual code review was able to find a potential code injection vulnerability.
+
+### 1. Environmental Variable Passed To System Call
+
+Source code: /source4/client/client.c<br/>
+Line: 966 - 969<br/>
+Reference: CWE-214<br/>
+Risk: High (ENV02-J, STR07-C)<br/>
+
+The issue with this vulnerability is that if someone is able to alter the environment
+variable "PAGER" they could point the variable to their own code possibly leading to
+code injection.
+
+
 # Summary of Findings
 
 The team looked at five assurance cases to map to potential security vulnerabilities in Samba.
