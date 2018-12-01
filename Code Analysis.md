@@ -140,7 +140,7 @@ A manual review of the following pieces of Samba code found no bugs:
 
 # Summary of Findings
 
-The team looked at five assurance cases tomap to potential security vulnerabilities in Samba.
+The team looked at five assurance cases to map to potential security vulnerabilities in Samba.
 We initially used automated scanning tools which confirmed that Samba is a very large open source
 project which is mature, leading to finding two security vulnerabilities. Additional manual review 
 of suspected code security vulnerabilities identified three potential problems. We did not contact 
