@@ -2,7 +2,7 @@
 
 ## Code Review Strategy
 
-Our code review strategy began with running some automated scanning tools.  The automated scanning tools that we were able to run were SonarQube and Cppcheck.  The SonarQube already had scanned Samba and Cppcheck was able to scan Samba after being downloaded.  The SonarQube scan showed 2 security errors for 1,422,846 lines of source code in 3,952 files and 877 bugs.  The Cppcheck scan showed a few errors and potential threats.  Based on the results from the scans we manually reviewed the code focusing on threats and code that relate to our 5 assurance cases.  When we found a potential vulnerability we would have someone else look over the same code and if they also thought it was a vulnerability as well we added that to our list of vulnerability findings.
+Our code review strategy began with running some automated scanning tools.  The automated scanning tools that we were able to run were SonarQube and Cppcheck.  The SonarQube already had scanned Samba and Cppcheck was able to scan Samba after being downloaded.  The SonarQube scan showed 2 security errors for 1,422,846 lines of source code in 3,952 files and 877 bugs.  The Cppcheck scan showed a few errors and potential threats.  Based on the results from the scans, we manually reviewed the code focusing on threats and code that relate to our 5 assurance cases.  When we found a potential vulnerability we would have someone else look over the same code and if they also thought it was a vulnerability as well, we added that to our list of vulnerability findings.
 Below are the findings from the automated code scanning.
 
 ## Manual Code Review Findings
@@ -175,7 +175,7 @@ stylistic choices in samba. These may be from legacy code or be nessesary based 
 the ammount of potential bugs created this way added some complexity to the finding of bugs.
 
 The assurances case work was helpful in identifying potential source code modules but was not
-exhaustive for all potential vulnearbilities. The misuse case suggested potential trouble spots
+exhaustive for all potential vulnerabilities. The misuse case suggested potential trouble spots
 which we combined with the automated analysis to identify large modules like smbd.c, which is the
 main driver.
 
