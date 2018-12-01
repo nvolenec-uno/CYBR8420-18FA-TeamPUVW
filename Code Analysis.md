@@ -149,8 +149,8 @@ There were no bugs that related to code injection from the automated testing.
 The code that would be most vulnerable to code injection are the parts of code that
 deal with the different scripts.  
 Specifically, dtdb\common\event_script.c which deals with the startup scripts had no bugs and a manual
- review found no security vulnerabilities.  The bugs that were found in other code that dealt with scripts
-were all false positives and no bugs were found after a manual review.
+ review found no security bugs.  The bugs that were found in other code that dealt with scripts
+were all false positives and no bugs other were found after a manual review.
 
 Our manual code review was able to find a potential code injection bug.
 
@@ -161,6 +161,8 @@ Environmental Variable Passed To System Call
 	pager_cmd = talloc_asprintf(ctx, "%s %s",(pager? pager:DEFAULT_PAGER), lname);
 	rc = system(pager_cmd);
 ```
+CWE-214: Information Exposure Through Process Environment
+https://cwe.mitre.org/data/definitions/214.html
 
 The issue with this vulnerability is that if someone is able to alter the environment
 variable "PAGER" they could point the variable to their own code possibly leading to
