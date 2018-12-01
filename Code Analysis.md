@@ -153,7 +153,7 @@ security vulnerabilities.
 
 Our manual code review was able to find a potential code injection vulnerability.
 
-### 1. Environmental Variable Passed To System Call
+### Vulnerability 1. Environmental Variable Passed To System Call
 
 Source code: /source4/client/client.c<br/>
 Line: 966 - 969<br/>
