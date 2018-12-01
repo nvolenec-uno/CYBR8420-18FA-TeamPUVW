@@ -2,7 +2,7 @@
 
 ## Code Review Strategy
 
-Our code review strategy began with running some automated scanning tools.  The automated scanning tools that we were able to run were SonarQube and Cppcheck.  The SonarQube already had scanned Samba and Cppcheck was able to scan Samba after being downloaded.  The SonarQube scan showed 2 security errors for 1,422,846 lines of source code in 3,952 files and 877 bugs.  The Cppcheck scan showed a few errors and potential threats.  Based on the results from the scans, we manually reviewed the code focusing on threats and code that relate to our 5 assurance cases.  When we found a potential vulnerability we would have someone else look over the same code and if they also thought it was a vulnerability as well, we added that to our list of vulnerability findings.
+Our code review strategy began with running some automated scanning tools.  The automated scanning tools that we were able to run were SonarQube and Cppcheck.  The SonarQube already had scanned Samba and Cppcheck was able to scan Samba after being downloaded.  The SonarQube scan showed 2 security errors for 1,422,846 lines of source code in 3,952 files and 877 bugs.  The Cppcheck scan showed a few errors and potential threats.  Based on the results from the scans, we manually reviewed the code focusing on threats and code that relate to our 5 assurance cases.  When we found a potential vulnerability, we would have someone else look over the same code and if they also thought it was a vulnerability as well, we added that to our list of vulnerability findings.
 Below are the findings from the automated code scanning.
 
 ## Manual Code Review Findings
@@ -40,7 +40,7 @@ Risk: High (STR07-C)<br/>
 
 ##  Server Recovery Assurance Case - Manual Code Review</br>
 
-A manual review of Samba source for module Samba/source4/smbd/server.c is the primary modulehandling startup</br>
+A manual review of Samba source for module Samba/source4/smbd/server.c is the primary module handling startup</br>
 and recovery. There was one error in the module:</br>
 </br>
 ### Error 1 - Null pointer  
@@ -57,7 +57,7 @@ static void recursive_delete(const char *path)
 ```
 
 Line 66 is passed a path as a parameter (const char *path) which isn't checked for a NULL pointer.</br>
-This covered by CWE-476 NULL Pointer Derefernce</br>
+This covered by CWE-476 NULL Pointer Dereference</br>
 https://cwe.mitre.org/data/definitions/476.html</br>
 </br>
 This was the only security bug manually discovered in the main driver module "smbd.c"</br>
@@ -75,7 +75,7 @@ AES_set_encrypt_key(K, 128, &ctx->aes_key);
 	memcpy(ctx->nonce, N, AES_CCM_128_NONCE_SIZE);
 ```
 
-This covered by CWE-476 NULL Pointer Derefernce</br>
+This covered by CWE-476 NULL Pointer Dereference</br>
 https://cwe.mitre.org/data/definitions/476.html</br>
 </br>
 ### Error 2 - Null pointer</br>
@@ -148,7 +148,7 @@ There were no bugs or vulnerabilities that related to code injection.
 
 The code that would be most vulnerable to code injection are the parts of code that
 deal with the different scripts such as startup scripts.
-Specifically dtdb\common\event_script.c which had no bugs and a manual review found no
+Specifically, dtdb\common\event_script.c which had no bugs and a manual review found no
 security vulnerabilities.
 
 Our manual code review was able to find a potential code injection vulnerability.
@@ -176,7 +176,7 @@ the Samba open source project, but we will identify the three manual review erro
 When using the results from the automated testing, many of the potential bugs that were reported such as
 returns, not being executed, and having unused arguments in functions were false positives relating to the
 stylistic choices in Samba. These may be from legacy code or required to support obscure or old compilers
-or environments, but the amount of potential bugs created this way added some complexity to the finding of bugs.
+or environments, but the number of potential bugs created this way added some complexity to the finding of bugs.
 
 The assurances case work was helpful in identifying potential source code modules but was not
 exhaustive for all potential vulnerabilities. The misuse case suggested potential trouble spots
