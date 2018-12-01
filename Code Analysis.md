@@ -144,16 +144,17 @@ A manual review of the following pieces of Samba code found no bugs:
 
 ## Code Injection Assurance Case - Manual Code Review
 
-There were no bugs or vulnerabilities that related to code injection.
+There were no bugs that related to code injection from the automated testing.
 
 The code that would be most vulnerable to code injection are the parts of code that
-deal with the different scripts such as startup scripts.
-Specifically, dtdb\common\event_script.c which had no bugs and a manual review found no
-security vulnerabilities.
+deal with the different scripts.  
+Specifically, dtdb\common\event_script.c which deals with the startup scripts had no bugs and a manual
+ review found no security vulnerabilities.  The bugs that were found in other code that dealt with scripts
+were all false positives and no bugs were found after a manual review.
 
-Our manual code review was able to find a potential code injection vulnerability.
+Our manual code review was able to find a potential code injection bug.
 
-### Vulnerability 1. Environmental Variable Passed To System Call
+Environmental Variable Passed To System Call
 
 Source code: /source4/client/client.c<br/>
 Line: 966 - 969<br/>
