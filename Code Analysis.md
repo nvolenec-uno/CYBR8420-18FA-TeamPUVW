@@ -138,7 +138,7 @@ A manual review of the following pieces of Samba code found no bugs:
 `source4\auth\system_session.c`  
 `source4\auth\unix_token.c`  
 
-## Code Injection Assurance Case - Code Review
+## Code Injection Assurance Case - Manual Code Review
 
 There were no bugs or vulnerabilities that related to code injection.
 
@@ -168,6 +168,11 @@ We initially used automated scanning tools which confirmed that Samba is a very 
 project which is mature, leading to finding two security vulnerabilities. Additional manual review 
 of suspected code security vulnerabilities identified three potential problems. We did not contact 
 the Samba open source project, but we will identify the three manual review errors to them.
+
+When using the results from the automated testing, many of the potential bugs that were reported such as
+returns not being executed and having unused arguments in functions were false positives relating to the
+stylistic choices in samba. These may be from legacy code or be nessesary based on how samba is coded, but
+the ammount of potential bugs created this way added some complexity to the finding of bugs.
 
 The assurances case work was helpful in identifying potential source code modules but was not
 exhaustive for all potential vulnearbilities. The misuse case suggested potential trouble spots
