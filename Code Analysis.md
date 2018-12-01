@@ -144,12 +144,12 @@ A manual review of the following pieces of Samba code found no bugs:
 
 ## Code Injection Assurance Case - Manual Code Review
 
-There were no bugs that related to code injection from the automated testing.
+There were no bugs that specifically related to code injection from the automated testing.
 
 The code that would be most vulnerable to code injection are the parts of code that
 deal with the different scripts.  
 Specifically, dtdb\common\event_script.c which deals with the startup scripts had no bugs and a manual
- review found no security bugs.  The bugs that were found in other code that dealt with scripts
+review found no security bugs.  The bugs that were found in other code that dealt with scripts
 were all false positives and no bugs other were found after a manual review.
 
 Our manual code review was able to find a potential code injection bug.
@@ -179,8 +179,7 @@ the Samba open source project, but we will identify the three manual review erro
 
 When using the results from the automated testing, many of the potential bugs that were reported such as
 returns, not being executed, and having unused arguments in functions were false positives relating to the
-stylistic choices in Samba. These may be from legacy code or required to support obscure or old compilers
-or environments, but the number of potential bugs created this way added some complexity to the finding of bugs.
+stylistic choices in Samba. The number of potential bugs created this way added some complexity to the finding of bugs.
 
 The assurances case work was helpful in identifying potential source code modules but was not
 exhaustive for all potential vulnerabilities. The misuse case suggested potential trouble spots
