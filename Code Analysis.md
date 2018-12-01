@@ -170,9 +170,9 @@ of suspected code security vulnerabilities identified three potential problems. 
 the Samba open source project, but we will identify the three manual review errors to them.
 
 When using the results from the automated testing, many of the potential bugs that were reported such as
-returns not being executed and having unused arguments in functions were false positives relating to the
-stylistic choices in samba. These may be from legacy code or be nessesary based on how samba is coded, but
-the ammount of potential bugs created this way added some complexity to the finding of bugs.
+returns, not being executed, and having unused arguments in functions were false positives relating to the
+stylistic choices in Samba. These may be from legacy code or be necessary based on how Samba is coded, but
+the amount of potential bugs created this way added some complexity to the finding of bugs.
 
 The assurances case work was helpful in identifying potential source code modules but was not
 exhaustive for all potential vulnerabilities. The misuse case suggested potential trouble spots
