@@ -95,7 +95,7 @@ These were the only security bugs manually discovered in the main driver module 
 Bypassing these algorithms could potentially lead to privilege escalation by obtaining</br>
 elevated privileges.</br>
 
-## Authentication Assurance Case - Code Review
+## Authentication Assurance Case - Manual Code Review
 
 The following bugs were identified by CodeSonar in code related to Authentication:
 
@@ -138,6 +138,20 @@ A manual review of the following pieces of Samba code found no bugs:
 `source4\auth\system_session.c`  
 `source4\auth\unix_token.c`  
 
+# Summary of Findings
+
+The team looked at five assurance cases tomap to potential security vulnerabilities in Samba.
+We initially used automated scanning tools which confirmed that Samba is a very large open source
+project which is mature, leading to finding two security vulnerabilities. Additional manual review 
+of suspected code security vulnerabilities identified three potential problems. We did not contact 
+the Samba open source project, but we will identify the three manual review errors to them.
+
+The assurances case work was helpful in identifying potential source code modules but was not
+exhaustive for all potential vulnearbilities. The misuse case suggested potential trouble spots
+which we combined with the automated analysis to identify large modules like smbd.c, which is the
+main driver.
+
+The project team felt the effort was valuable and we hope to use these techniques in the future.
 
 # Project Board
 Link to GitHub repository that shows internal project task assignments and collaborations.  
