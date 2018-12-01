@@ -156,10 +156,11 @@ Our manual code review was able to find a potential code injection bug.
 
 Environmental Variable Passed To System Call
 
-Source code: /source4/client/client.c<br/>
-Line: 966 - 969<br/>
-Reference: CWE-214<br/>
-Risk: High (ENV02-J, STR07-C)<br/>
+```
+	pager=getenv("PAGER");
+	pager_cmd = talloc_asprintf(ctx, "%s %s",(pager? pager:DEFAULT_PAGER), lname);
+	rc = system(pager_cmd);
+```
 
 The issue with this vulnerability is that if someone is able to alter the environment
 variable "PAGER" they could point the variable to their own code possibly leading to
