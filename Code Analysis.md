@@ -43,18 +43,19 @@ Risk: High (STR07-C)<br/>
 A manual review of Samba source for module Samba/source4/smbd/server.c is the primary modulehandling startup</br>
 and recovery. There was one error in the module:</br>
 </br>
-### Error 1 - Null pointer</br>
-</br>
-/*</br>
-  recursively delete a directory tree</br>
-*/</br>
-</br>
-static void recursive_delete(const char *path)</br>
-{</br>
-	DIR *dir;</br>
-	struct dirent *de;</br>
-	dir = opendir(path);</br>
-</br>
+### Error 1 - Null pointer  
+```
+/*
+  recursively delete a directory tree
+*/
+
+static void recursive_delete(const char *path)
+{
+	DIR *dir;
+	struct dirent *de;
+	dir = opendir(path);
+```
+
 Line 66 is passed a path as a parameter (const char *path) which isn't checked for a NULL pointer.</br>
 This covered by CWE-476 NULL Pointer Derefernce</br>
 https://cwe.mitre.org/data/definitions/476.html</br>
@@ -68,24 +69,27 @@ A manual review of Samba source for module Samba/lib/crypto found two bugs which
 which could allow malicious user to falsify a crypto claim</br>
 </br>
 ### Error 1 - Null pointer</br>
-</br>There was one error in the module aes_ccm_128.c line 35:</br>
-</br>
-AES_set_encrypt_key(K, 128, &ctx->aes_key);</br>
-	memcpy(ctx->nonce, N, AES_CCM_128_NONCE_SIZE);</br>
-</br>
+</br>There was one error in the module aes_ccm_128.c line 35:  
+```
+AES_set_encrypt_key(K, 128, &ctx->aes_key);
+	memcpy(ctx->nonce, N, AES_CCM_128_NONCE_SIZE);
+```
+
 This covered by CWE-476 NULL Pointer Derefernce</br>
 https://cwe.mitre.org/data/definitions/476.html</br>
 </br>
 ### Error 2 - Null pointer</br>
-</br></br>
+  
 There was one error in the module aes_ccm_128.c line 89:</br>
-</br>
-	/*</br>
-	 * Step 2: generate J0</br>
-	 */</br>
-	memcpy(ctx->J0, IV, AES_GCM_128_IV_SIZE);</br>
-	aes_gcm_128_inc32(ctx->J0);</br>
-</br>
+
+```
+	/*
+	 * Step 2: generate J0
+	 */
+	memcpy(ctx->J0, IV, AES_GCM_128_IV_SIZE);
+	aes_gcm_128_inc32(ctx->J0);
+```
+
 Line 89 is passed a path as a parameter (ctx->JO) which isn't checked for a NULL pointer.</br>
 This covered by CWE-476 NULL Pointer Derefernce</br>
 https://cwe.mitre.org/data/definitions/476.html</br>
@@ -171,8 +175,8 @@ the Samba open source project, but we will identify the three manual review erro
 
 When using the results from the automated testing, many of the potential bugs that were reported such as
 returns, not being executed, and having unused arguments in functions were false positives relating to the
-stylistic choices in Samba. These may be from legacy code or be necessary based on how Samba is coded, but
-the amount of potential bugs created this way added some complexity to the finding of bugs.
+stylistic choices in Samba. These may be from legacy code or required to support obscure or old compilers
+or environments, but the amount of potential bugs created this way added some complexity to the finding of bugs.
 
 The assurances case work was helpful in identifying potential source code modules but was not
 exhaustive for all potential vulnerabilities. The misuse case suggested potential trouble spots
